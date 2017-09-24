@@ -12,21 +12,28 @@ function initiateScales() {
 	    d3.selectAll(d.ancestors().map(function(d) { return d.node; }))
 	        .classed("node--hover", hover)
 	      .	select("rect")
-	      .style("boder-color","black")
-	       .style("stroke","black")
 	        .attr("width", function(d) { return d.x1 - d.x0 - hover; })
 	        .attr("height", function(d) { return d.y1 - d.y0 - hover; });
-	    
+	    var cell = svg
+	    .selectAll(".node")
+	    .data(root.descendants())
+	    .enter().append("g")
+	       .attr("transform", function(d) { return "translate(" + d.x0 + "," + d.y0 + ")"; })
+	      .attr("class", "node")
+	      .each(function(d) { d.node = this; })
+	      .on("mouseover", hovered(true))
+	      .on("mouseout", hovered(false))
+	      .on("click", function(d){
+		    console.log("clicked id_core_asset"+d.data.id_core_asset);
+		    /*<![CDATA[*/
+		    window.location.href = "http://localhost:8080/treemapfeatureproductview?base=Baseline-v1.0&fname="+d.data.fname+"&idfile="+ d.data.id_core_asset+"&pr="+d.data.product_release+"#diffview";
+		    /*]]>*/
+		 	 });
 	    if(hover==false)
 	    	d3.selectAll(d.ancestors().map(function(d) { return d.node; }))
 	    	      .classed("node--hover", hover).select("rect").
 	    	      style("fill", function(d) { 
-	    	    	  	var operation = d.data.operation;
-	  	    		if ( (operation =="undefined") || (d.data.operation==null)) return "#cccccc";
-	  	    	  	else if (operation==("add")) return "#3fac54";
-	  	    	  	else if (operation==("delete")) return "#e6323d";
-	  	    	  	else if (operation=="churn") return "#FF8100";
-	    	    	  });
+	    	    	  	return   d.data.operation;});
 	    else d3.select(d.node).classed("node--hover", hover).
 	    select("rect").style("fill","#6495ed");
 	  };
@@ -55,19 +62,11 @@ function initiateScales() {
 	       .style("stroke","black")
 	        .attr("width", function(d) { return d.x1 - d.x0 - hover; })
 	        .attr("height", function(d) { return d.y1 - d.y0 - hover; });
-	    
-	    if(hover==false)
-	    	d3.selectAll(d.ancestors().map(function(d) { return d.node; }))
-	    	      .classed("node--hover", hover).select("rect").
-	    	      style("fill", function(d) { 
-	    	    	  	var operation = d.data.operation;
-	  	    		if ( (operation =="undefined") || (d.data.operation==null)) return "#cccccc";
-	  	    	  	else if (operation==("add")) return "#3fac54";
-	  	    	  	else if (operation==("delete")) return "#e6323d";
-	  	    	  	else if (operation=="churn") return "#FF8100";
-	    	    	  });
-	    else d3.select(d.node).classed("node--hover", hover).
-	    select("rect").style("fill","#6495ed");
+	    var cell = var cell = cell.selectAll(".node");
+	    cell.append("clipPath")
+	      .attr("id", function(d) { return "clip-" + d.id; })
+	    .append("use")
+	      .attr("xlink:href", function(d) { return "#rect-" + d.id + ""; });
 	  };
   /**
   var operation = d.data.operation;
@@ -97,12 +96,6 @@ function initiateScales() {
       .on("mouseout", hovered(false))
     .on("click", function(d){
     	    if(d.data.operation==="reused") window.alert("This asset does not have any Diff associated!\n Select another asset");
-    	    else{
-    	    	console.log("clicked id_asset"+d.data.p_asset_id);
-    		    /*<![CDATA[*/
-    		    window.location.href = "http://localhost:8080/file_vp_structure?pr=" +d.data.pr+"&file="+ d.data.p_asset_id;
-    		    /*]]>*/	
-    	    }  });
 // PV:ENDCOND
 
 
