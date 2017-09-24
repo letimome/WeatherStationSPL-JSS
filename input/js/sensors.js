@@ -40,14 +40,15 @@ function applyTachoValue(min, max, measureText, pointer) {
 		var measure = measureText.value;
 		var intValue = checkMeasure(min, max, measure);
 		if (isNaN(intValue)) return false;
+		var root = stratify(data)
+	      .sum(function(d) { return d.value; })
+	      .sort(function(a, b) { return b.height - a.height || b.value - a.value; });
 		function getMetaContentByName(name,content){
 			   var content = (content==null)?'content':content;
 			   return document.querySelector("meta[name='"+name+"']").getAttribute(content);
 			}
 			
 			$(document).ready(function(){
-				//console.log(diffString); //diffString should be the value of diffview value
-				//get select("#diffvalue"). metadata
 				var diffvalue = getMetaContentByName("diffvalue");
 				if (diffvalue==null) return null;
 			});

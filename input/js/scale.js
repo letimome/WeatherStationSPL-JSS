@@ -91,10 +91,6 @@ function initiateScales() {
     .data(root.descendants())
     .enter().append("g")
        .attr("transform", function(d) { return "translate(" + d.x0 + "," + d.y0 + ")"; })
-      .attr("class", "node")
-      .each(function(d) { d.node = this; })
-      .on("mouseover", hovered(true))
-      .on("mouseout", hovered(false))
     .on("click", function(d){
     	    if(d.data.operation==="reused") window.alert("This asset does not have any Diff associated!\n Select another asset");
     	    else{
@@ -103,6 +99,10 @@ function initiateScales() {
     		    window.location.href = "http://localhost:8080/file_vp_structure?pr=" +d.data.pr+"&file="+ d.data.p_asset_id;
     		    /*]]>*/	
     	    }  });
+
+	var color = d3.scaleLinear()
+		.domain([1, 6])
+		.range(['#00b700','#ff9a00','#E84646"']); 	
 // PV:ENDCOND
 
 

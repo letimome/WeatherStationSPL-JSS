@@ -35,7 +35,8 @@ var windWarning = 'Storm Warning';
 var mainTitle = 'Wetterstation';
 var tempTitle = 'Temperatur';
 var presTitle = 'Luftdruck';
-var tempWarning = 'Extreme Hitze';
+var tempWarning = 'Extreme Hitze!';
 var windTitle = 'Windgeschwindigkeit';
 var windWarning = 'Sturmwarnung';
+var genericWarning = 'Achtung';
 // PV:ENDCOND

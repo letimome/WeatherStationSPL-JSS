@@ -15,10 +15,7 @@
     </sect1>
     <sect1 condition="pv:hasFeature('AirPressure')">
         <title>Understanding the Air Pressure Gauge</title>
-        <para>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
-            invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et
-            accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata
-            sanctus est Lorem ipsum dolor sit amet.</para>
+        <para>Der Luftdruck an einem beliebigen Ort der Erdatmosphäre ist der hydrostatische Druck der Luft, der an diesem Ort herrscht. Dieser Druck entsteht (veranschaulicht) durch die Gewichtskraft der Luftsäule, die auf der Erdoberfläche oder einem Körper steht. Der mittlere Luftdruck der Atmosphäre (atmosphärischer Druck) auf Meereshöhe beträgt normgemäß 101 325 Pa = 101,325 kPa = 1 013,25 hPa ≈ 1 bar..</para>
     </sect1>
     <sect1 condition="pv:hasFeature('Temperature')">
         <title>Understanding the Thermometer</title>
@@ -33,10 +30,7 @@
     </sect1>
     <sect1 condition="pv:hasFeature('WindSpeed')">
         <title>Understanding the Wind Speed Gauge</title>
-        <para>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
-            invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et
-            accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata
-            sanctus est Lorem ipsum dolor sit amet.</para>
+        <para>Die Windgeschwindigkeit ist die Geschwindigkeit der Luft gegenüber dem Boden. Sie ist eine gerichtete Größe, definiert als Vektor mit einer waagerechten und einer senkrechten Komponente. Dieser wird jedoch in der Praxis meist auf die horizontale Komponente beschränkt und durch bestimmte Geschwindigkeitsintervalle in eine Windstärke kategorisiert. Es wird dadurch möglich, den Geschwindigkeitsvektor anwendungsorientiert aufzubereiten, um die jeweils relevanten Elemente hiernach beispielsweise in Wetterkarten eintragen zu können. Für bestimmte Anwendungen wie die Luftfahrt ist jedoch auch die vertikale Komponente der Windgeschwindigkeit wichtig, beispielsweise um Aufwinde für Segelflugzeuge oder Gleitschirme abzuschätzen.</para>
         <sect2 condition="pv:hasFeature('Gale')">
             <title>Gale Warning</title>
             <para>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</para>
