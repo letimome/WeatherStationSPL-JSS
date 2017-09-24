@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?oxygen RNGSchema="http://www.oasis-open.org/docbook/xml/5.0/rng/docbook.rng" type="xml"?>
+<article xmlns="http://docbook.org/ns/docbook"
+    xmlns:xlink="http://www.w3.org/1999/xlink" version="5.0">
+    <info>
+        <title>Weather Station User Manual</title>
+    </info>
+    <sect1>
+        <title>Introduction</title>
+        <para>The system supports the following measurements:</para>
+        <simplelist>
+            <member condition="pv:hasFeature('AirPressure')">Air Pressure</member>
+            <member condition="pv:hasFeature('Temperature')">Temperature</member>
+            <member condition="pv:hasFeature('WindSpeed')">Wind Speed</member></simplelist>
+    </sect1>
+    <sect1 condition="pv:hasFeature('AirPressure')">
+        <title>Understanding the Air Pressure Gauge</title>
+        <para>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
+            invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et
+            accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata
+            sanctus est Lorem ipsum dolor sit amet.</para>
+    </sect1>
+    <sect1 condition="pv:hasFeature('Temperature')">
+        <title>Understanding the Thermometer</title>
+        <para>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
+            invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et
+            accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata
+            sanctus est Lorem ipsum dolor sit amet.</para>
+        <sect2 condition="pv:hasFeature('Heat')">
+            <title>High Temperature Warning</title>
+            <para>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</para>
+        </sect2>
+    </sect1>
+    <sect1 condition="pv:hasFeature('WindSpeed')">
+        <title>Understanding the Wind Speed Gauge</title>
+        <para>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
+            invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et
+            accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata
+            sanctus est Lorem ipsum dolor sit amet.</para>
+        <sect2 condition="pv:hasFeature('Gale')">
+            <title>Gale Warning</title>
+            <para>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</para>
+        </sect2>
+    </sect1>
+</article>

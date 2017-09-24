@@ -1,0 +1,6 @@
+@import "thermometer.css";
+@import "pressure.css";
+@import "wind.css";
+@import "tacho.css";
+
+body { font-size: 18px; }

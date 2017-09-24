@@ -1,0 +1,35 @@
+.pressure {
+	width: 400px;
+}
+
+#pressure {
+	position: relative;
+	text-align: center;
+	background-color: white;
+	width: 400px;
+	height: 418px;
+	padding-bottom: 10px;
+}
+
+#p_main {
+	position: relative;
+}
+
+#pressure form div {
+	position: absolute;
+	text-align: left;
+	top: 360px;
+	left: 45px;
+}
+
+#p_pic {
+	background-color: #ffff78;
+	width: 282px;
+	height: 282px;
+	margin: 0px auto;
+}
+
+#p_pic div div {
+	width: 282px;
+	height: 282px;
+}

@@ -1,0 +1,35 @@
+.wind {
+	width: 400px;
+}	
+
+#wind {
+	position: relative;
+	text-align: center;
+	background-color: white;
+	width: 400px;
+	height: 418px;
+	padding-bottom: 10px;
+}
+
+#w_main {
+	position: relative;
+}
+
+#wind form div {
+	position: absolute;
+	text-align: left;
+	top: 360px;
+	left: 45px;
+}
+
+#w_pic {
+	background-color: #8888ff;
+	width: 282px;
+	height: 282px;
+	margin: 0px auto;
+}
+
+#w_pic div div {
+	width: 282px;
+	height: 282px;
+}

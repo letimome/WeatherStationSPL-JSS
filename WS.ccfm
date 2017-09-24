@@ -1,0 +1,1414 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cm:consulmodel xmlns:cm="http://www.pure-systems.com/consul/model" cm:id="iRZYU6x7KDUtPNAnI" cm:version="1.5" cm:type="ps:ccfm">
+  <cm:head>
+    <cm:properties>
+      <cm:property cm:id="iZq16qGu5EVr170qe" cm:type="ps:string" cm:invisible="true" cm:name="ps:version">
+        <cm:constant cm:id="iOv02gPnYxChmVODj" cm:type="ps:string">1.0</cm:constant>
+      </cm:property>
+      <cm:property cm:id="i0tFUtm6gRZWEQo-b" cm:type="ps:string" cm:invisible="true" cm:name="ps:name">
+        <cm:constant cm:id="iNpIvY60Lw4lRlgP4" cm:type="ps:string">WeatherStationHTMLSources</cm:constant>
+      </cm:property>
+      <cm:property cm:id="isc3k_NcuSwSwX-il" cm:type="ps:string" cm:invisible="true" cm:name="ps:author">
+        <cm:constant cm:id="iDXJfXzD9N9GbSVnA" cm:type="ps:string">holger</cm:constant>
+      </cm:property>
+      <cm:property cm:id="iJqHFD42YGHapOmKN" cm:type="ps:date" cm:invisible="true" cm:name="ps:created">
+        <cm:constant cm:id="ibwMbXtSh3jh6sAq0" cm:type="ps:date">2009-11-20T15:24:58Z</cm:constant>
+      </cm:property>
+    </cm:properties>
+  </cm:head>
+  <cm:restrictions>
+    <cm:restset cm:id="iRp_pphwsIp8uxDF0">
+      <cm:restriction cm:id="iS5vsXovhki1_pFGe">
+        <cm:script cm:id="ioob13ZkESQB6aVWv" cm:language="ps:pvscl" cm:type="ps:boolean">Color</cm:script>
+      </cm:restriction>
+    </cm:restset>
+    <cm:restset cm:id="i7PzvI3ZcDr_r_aZP">
+      <cm:restriction cm:id="ibnzz6c8_X9N5eLH8">
+        <cm:script cm:id="iVjj1yjUzC3qFeCk8" cm:language="ps:pvscl" cm:type="ps:boolean">NOT(Color)</cm:script>
+      </cm:restriction>
+    </cm:restset>
+  </cm:restrictions>
+  <cm:elements cm:rootid="ioy69y2RYghayHFDs">
+    <cm:element cm:id="ioy69y2RYghayHFDs" cm:name="WeatherStationHTML" cm:type="ps:family" cm:class="ps:family" cm:default="on">
+      <cm:relations cm:id="i1vWScXAW-SOlaIzw" cm:class="ps:dependencies">
+      </cm:relations>
+      <cm:relations cm:id="igk_a0n8cnOX3b0eJ" cm:class="ps:children">
+        <cm:relation cm:id="i-HlLX0ZNB-FgUxot" cm:type="ps:optional">
+          <cm:target cm:id="ieCr3UJWi_54NDqj_">./iptC2Nq3tKteaAK4r</cm:target>
+        </cm:relation>
+      </cm:relations>
+      <cm:properties>
+        <cm:property cm:id="iJj6pzJUrKuOHeDCv" cm:type="ps:string" cm:invisible="true" cm:fixed="true" cm:readonly="true" cm:name="config">
+          <cm:constant cm:id="imPbLefvD9JERarvL" cm:type="ps:string">com.ps.consul.eclipse.ui.sourceimport.JavaConfiguration</cm:constant>
+        </cm:property>
+        <cm:property cm:id="iIPTx-TBbpFLNlj8i" cm:type="ps:string" cm:invisible="true" cm:fixed="true" cm:readonly="true" cm:name="sourceimport:configuration:settings">
+          <cm:constant cm:id="iPPKbrPVqr_467oIG" cm:type="ps:string">&lt;?xml version="1.0" encoding="UTF-8" standalone="no"?&gt;&lt;associations&gt;&lt;association checked="false" desc="Other files" ending=".*" filetype="undefined" type="ps:object"/&gt;&lt;association checked="true" desc="Java source file" ending=".java" filetype="impl" type="ps:class"/&gt;&lt;association checked="true" desc="Ant build script" ending="build.xml" filetype="misc" type="ps:makefile"/&gt;&lt;association checked="true" desc="HTML" ending=".html" filetype="misc" type="ex:html"/&gt;&lt;association checked="true" desc="CSS" ending=".css" filetype="misc" type="ex:css"/&gt;&lt;association checked="true" desc="JavaScript" ending=".js" filetype="misc" type="ex:js"/&gt;&lt;association checked="true" desc="Images" ending=".png" filetype="misc" type="ex:img"/&gt;&lt;association checked="true" desc="WordML Documents" ending=".xml" filetype="misc" type="ex:doc"/&gt;&lt;switches&gt;&lt;switch name="HIDE_MT_COMPONENTS"&gt;true&lt;/switch&gt;&lt;switch name="USE_RELATIVE_PATHS"&gt;false&lt;/switch&gt;&lt;switch name="USE_SORTING"&gt;true&lt;/switch&gt;&lt;/switches&gt;&lt;values&gt;&lt;value name="RELATIVE_TO"&gt;workspace&lt;/value&gt;&lt;/values&gt;&lt;/associations&gt;</cm:constant>
+        </cm:property>
+        <cm:property cm:id="i--XrBNovVT3QwX3M" cm:type="ps:string" cm:invisible="true" cm:fixed="true" cm:name="ModelSyncStoreID">
+          <cm:constant cm:id="ipCq8yep4WU9TW1kA" cm:type="ps:string">com.ps.consul.eclipse.ui.sourceimport.SourceImportSyncStore</cm:constant>
+        </cm:property>
+        
+        
+        
+        
+      </cm:properties>
+      <cm:vname>
+        <cm:mimedesc cm:id="iwB0ADdyxxzxjADMG" cm:mimetype="text/plain" cm:encoding="utf-8">HTML Weather Station</cm:mimedesc>
+      </cm:vname>
+    </cm:element>
+    <cm:element cm:id="iptC2Nq3tKteaAK4r" cm:type="ps:component" cm:class="ps:component" cm:default="on">
+      <cm:relations cm:id="ib-tx8JmY6JhtNqFq" cm:class="ps:dependencies">
+      </cm:relations>
+      <cm:relations cm:id="iDavlQBkIc0RJsiT-" cm:class="ps:parents">
+        <cm:relation cm:id="ivsbTg1vmzZ0eQwXj" cm:type="ps:parent">
+          <cm:target cm:id="i5G6qMlQV3DaMr1ML">./ioy69y2RYghayHFDs</cm:target>
+        </cm:relation>
+      </cm:relations>
+      <cm:relations cm:id="iR5XSsD3-lulOCD-7" cm:class="ps:children">
+        <cm:relation cm:id="i3druo0x3XmD6Ii_q" cm:type="ps:optional">
+          <cm:target cm:id="iJmpc08oP0BTHZfcz">./i_e8DgvzCe8cVMNyz</cm:target>
+          <cm:target cm:id="ii79eH1wXgPhLA7yq">./iMVbWtEcXdXh7LfKO</cm:target>
+          <cm:target cm:id="isgcEjHOTME39OBqA">./i2pQ0_Lrvl3lfWnqn</cm:target>
+          <cm:target cm:id="itl9alfIe0UoDe2-3">./iaamH0N-pIJDyT-zN</cm:target>
+          <cm:target cm:id="iuZoiM8Bc-y3D_9D8">./ikANZCfrIOSpd7W5l</cm:target>
+        </cm:relation>
+      </cm:relations>
+      <cm:properties>
+        <cm:property cm:id="i4Fc9XeSZl6IXpkEh" cm:type="ps:directory" cm:inheritable="true" cm:fixed="true" cm:name="srcdir">
+          <cm:constant cm:id="iv-SwmiZ75PRwfukA" cm:type="ps:directory">.</cm:constant>
+        </cm:property>
+        <cm:property cm:id="iymd3P8vB398WW5_W" cm:type="ps:directory" cm:inheritable="true" cm:fixed="true" cm:name="dir">
+          <cm:constant cm:id="ix9dBfspHXI7aNunK" cm:type="ps:directory">.</cm:constant>
+        </cm:property>
+        
+        
+        
+        
+      </cm:properties>
+      <cm:vname>
+        <cm:mimedesc cm:id="i1usdLTqoNljYb7wP" cm:mimetype="text/plain" cm:encoding="utf-8">WeatherStationHTML</cm:mimedesc>
+      </cm:vname>
+    </cm:element>
+    <cm:element cm:id="iMVbWtEcXdXh7LfKO" cm:type="ps:component" cm:class="ps:component" cm:default="on">
+      <cm:relations cm:id="i667_vu7-p_l4pjzn" cm:class="ps:dependencies">
+      </cm:relations>
+      <cm:relations cm:id="iefsJH4jAiptLSDu3" cm:class="ps:parents">
+        <cm:relation cm:id="iRh0tPDZtHjpjNrz7" cm:type="ps:parent">
+          <cm:target cm:id="ixUMtWaR_xBX09P_8">./iptC2Nq3tKteaAK4r</cm:target>
+        </cm:relation>
+      </cm:relations>
+      <cm:relations cm:id="iCnv1nUnUMO7oIMWN" cm:class="ps:children">
+        <cm:relation cm:id="iuxg50g4GYkfW6tOu" cm:type="ps:optional">
+          <cm:target cm:id="iczloFCzDLckY6503">./iuf83VNHQ-P8ocwhX</cm:target>
+          <cm:target cm:id="iB7G4DGVGmVpoEff4">./iCRWhn06zqFtV3NSz</cm:target>
+          <cm:target cm:id="itEXcMTqm027H9oOU">./i7G3rTS94L1duzd4q</cm:target>
+          <cm:target cm:id="i1A18b1_GQgFy7K3D">./iVyTe00912-eZkOPp</cm:target>
+          <cm:target cm:id="iYTqy18oWjufL7URR">./iBxd73Ag6o3jV6xj6</cm:target>
+          <cm:target cm:id="iEjsg0D4R1BKZqEHH">./i_f7EeV2wcOSLo_0C</cm:target>
+          <cm:target cm:id="iGY9U-XNQyYlTLOXv">./i-ItJ13DhInGT7TwB</cm:target>
+          <cm:target cm:id="iRbAhUrSv6kRbtWAX">./i_HAR5DsdLTMTntGn</cm:target>
+          <cm:target cm:id="iBCEXZq8WEBW-iX_f">./iqUxTVK6IJFIE7NTY</cm:target>
+          <cm:target cm:id="i1HBBvrjCb1Jue_bP">./i6zJOula3l9QkJ-jc</cm:target>
+          <cm:target cm:id="iR8-iPtrh1wn3Tw-E">./i9s1ZtwmfbepP7Y-M</cm:target>
+          <cm:target cm:id="io1z2pEcoAgNscCvV">./irguJcQUSlONsBQcb</cm:target>
+          <cm:target cm:id="i544dso9F9ySK_cLG">./iRZ7uccHEcrwim35b</cm:target>
+          <cm:target cm:id="i7hwWx0YwVWRF_wAZ">./iG3q3eZhADaj5hVEU</cm:target>
+          <cm:target cm:id="iGizIxkA0tyz9Uck7">./iNUfGsMTDwfTJVUY9</cm:target>
+          <cm:target cm:id="iLnxfDwWFlyX0Ndv4">./ijwd_xX0L7tdhfGhu</cm:target>
+          <cm:target cm:id="isMS4qt-KQ7DDs3GG">./iUjSG3ghJCQ4NTz5P</cm:target>
+          <cm:target cm:id="ilpY2tCceE3KBeUvn">./iH1hj_CZNQq138Gjj</cm:target>
+        </cm:relation>
+      </cm:relations>
+      <cm:properties>
+        <cm:property cm:id="in2C95FCJSwqJq6fY" cm:type="ps:directory" cm:inheritable="true" cm:fixed="true" cm:name="srcdir">
+          <cm:constant cm:id="iD5-IHJLvJ471K8Dz" cm:type="ps:directory">./images</cm:constant>
+        </cm:property>
+        <cm:property cm:id="i1uwzFp_3FELACxjQ" cm:type="ps:directory" cm:inheritable="true" cm:fixed="true" cm:name="dir">
+          <cm:constant cm:id="i2z1kn6fD0ec364Qf" cm:type="ps:directory">./images</cm:constant>
+        </cm:property>
+        
+        
+        
+        
+      </cm:properties>
+      <cm:vname>
+        <cm:mimedesc cm:id="iV6DyisSrYThwfkVq" cm:mimetype="text/plain" cm:encoding="utf-8">images</cm:mimedesc>
+      </cm:vname>
+    </cm:element>
+    <cm:element cm:id="iuf83VNHQ-P8ocwhX" cm:type="ex:img" cm:class="ps:part" cm:default="on">
+      <cm:relations cm:id="iLV3XJ5kLPzqUoS0W" cm:class="ps:dependencies">
+      </cm:relations>
+      <cm:relations cm:id="ig30O-GYNtcnmnjaV" cm:class="ps:parents">
+        <cm:relation cm:id="ihiNH29p6tO6NlIPZ" cm:type="ps:parent">
+          <cm:target cm:id="ifpEFH2dtTI8bTNFr">./iMVbWtEcXdXh7LfKO</cm:target>
+        </cm:relation>
+      </cm:relations>
+      <cm:relations cm:id="iEYFEjAGUfHNUGVfX" cm:class="ps:children">
+        <cm:relation cm:id="ieAL01rWy49BDpIk9" cm:type="ps:optional">
+          <cm:target cm:id="i0HqMaas4KjEz6Txd">./i0ra-DCcJQxsE61kz</cm:target>
+        </cm:relation>
+      </cm:relations>
+      <cm:vname>
+        <cm:mimedesc cm:id="iBW-XWww4hog-psu9" cm:mimetype="text/plain" cm:encoding="utf-8">n_0</cm:mimedesc>
+      </cm:vname>
+    </cm:element>
+    <cm:element cm:id="i0ra-DCcJQxsE61kz" cm:type="ps:file" cm:class="ps:source" cm:default="on">
+      <cm:relations cm:id="isLrU_8xndXMcJ5Bo" cm:class="ps:dependencies">
+      </cm:relations>
+      <cm:relations cm:id="iur5arRzjrTz3hsHN" cm:class="ps:parents">
+        <cm:relation cm:id="iEmwk5C3pF969x4Ib" cm:type="ps:parent">
+          <cm:target cm:id="i3nrKNtHBESYnv--l">./iuf83VNHQ-P8ocwhX</cm:target>
+        </cm:relation>
+      </cm:relations>
+      <cm:properties>
+        <cm:property cm:id="iGfiAAI4Vuu8tiwmD" cm:type="ps:path" cm:fixed="true" cm:name="file">
+          <cm:constant cm:id="ipeyaKd5qCBztKQZJ" cm:type="ps:path">n_0.png</cm:constant>
+        </cm:property>
+        <cm:property cm:id="i4m_Aenaf9ZAeFRVt" cm:type="ps:filetype" cm:fixed="true" cm:name="type">
+          <cm:constant cm:id="i-Ul0_ZAyuQA8sGjp" cm:type="ps:filetype">misc</cm:constant>
+        </cm:property>
+      </cm:properties>
+      <cm:vname>
+        <cm:mimedesc cm:id="il1Lar5Bs3HfFKaI9" cm:mimetype="text/plain" cm:encoding="utf-8">n_0.png</cm:mimedesc>
+      </cm:vname>
+    </cm:element>
+    <cm:element cm:id="iCRWhn06zqFtV3NSz" cm:type="ex:img" cm:class="ps:part" cm:default="on">
+      <cm:relations cm:id="iWqhuS6bRg4XhRj-9" cm:class="ps:dependencies">
+      </cm:relations>
+      <cm:relations cm:id="i-iiPFdjDmE51mUSm" cm:class="ps:parents">
+        <cm:relation cm:id="ikzfLF4tRpGUdlQdx" cm:type="ps:parent">
+          <cm:target cm:id="igZ6QHcrIgQXmpJXA">./iMVbWtEcXdXh7LfKO</cm:target>
+        </cm:relation>
+      </cm:relations>
+      <cm:relations cm:id="ig3eVmhaQsKubfmqO" cm:class="ps:children">
+        <cm:relation cm:id="i_a50HYwgBFJGAJnp" cm:type="ps:optional">
+          <cm:target cm:id="i9vvTFeup1vw-2rCV">./iLyBzzslPO2DLjBL-</cm:target>
+        </cm:relation>
+      </cm:relations>
+      <cm:vname>
+        <cm:mimedesc cm:id="i230zapNJEr8Ce8z1" cm:mimetype="text/plain" cm:encoding="utf-8">n_1</cm:mimedesc>
+      </cm:vname>
+    </cm:element>
+    <cm:element cm:id="iLyBzzslPO2DLjBL-" cm:type="ps:file" cm:class="ps:source" cm:default="on">
+      <cm:relations cm:id="iMDVR596mJ7tDHF1q" cm:class="ps:dependencies">
+      </cm:relations>
+      <cm:relations cm:id="ir2qq-l8nDnJNArwu" cm:class="ps:parents">
+        <cm:relation cm:id="i72trxArsyCQ68sRj" cm:type="ps:parent">
+          <cm:target cm:id="iA2DRr92XvR_TbVjo">./iCRWhn06zqFtV3NSz</cm:target>
+        </cm:relation>
+      </cm:relations>
+      <cm:properties>
+        <cm:property cm:id="i70T1schTRHfio73S" cm:type="ps:path" cm:fixed="true" cm:name="file">
+          <cm:constant cm:id="ifMZBkrIaHoGS_O1C" cm:type="ps:path">n_1.png</cm:constant>
+        </cm:property>
+        <cm:property cm:id="iOjROUF7lU_DD0HcG" cm:type="ps:filetype" cm:fixed="true" cm:name="type">
+          <cm:constant cm:id="iinq2Vam-ClIk-du_" cm:type="ps:filetype">misc</cm:constant>
+        </cm:property>
+      </cm:properties>
+      <cm:vname>
+        <cm:mimedesc cm:id="isRbQ824mmSFv-17Z" cm:mimetype="text/plain" cm:encoding="utf-8">n_1.png</cm:mimedesc>
+      </cm:vname>
+    </cm:element>
+    <cm:element cm:id="i7G3rTS94L1duzd4q" cm:type="ex:img" cm:class="ps:part" cm:default="on">
+      <cm:relations cm:id="imBCDm0b_HpGylOBi" cm:class="ps:dependencies">
+      </cm:relations>
+      <cm:relations cm:id="i-ayemwMEOSTja1VH" cm:class="ps:parents">
+        <cm:relation cm:id="ivOXLysVRiN64LwD_" cm:type="ps:parent">
+          <cm:target cm:id="iOZWlACyxp2r_Pe9F">./iMVbWtEcXdXh7LfKO</cm:target>
+        </cm:relation>
+      </cm:relations>
+      <cm:relations cm:id="i8fPNPBdPtmRFrE9W" cm:class="ps:children">
+        <cm:relation cm:id="iiK8S5HDaqJRu4Tt6" cm:type="ps:optional">
+          <cm:target cm:id="idaWO0O4jM9o--V2W">./iftu1QkvqU3yEWAmw</cm:target>
+        </cm:relation>
+      </cm:relations>
+      <cm:vname>
+        <cm:mimedesc cm:id="iIPJ_JHQdDYUfb3aC" cm:mimetype="text/plain" cm:encoding="utf-8">n_10</cm:mimedesc>
+      </cm:vname>
+    </cm:element>
+    <cm:element cm:id="iftu1QkvqU3yEWAmw" cm:type="ps:file" cm:class="ps:source" cm:default="on">
+      <cm:relations cm:id="iPNR6_WGjsyTwZKRm" cm:class="ps:dependencies">
+      </cm:relations>
+      <cm:relations cm:id="iO0EH_jIpKcUd38O4" cm:class="ps:parents">
+        <cm:relation cm:id="ilCFj5wl7WyuIxAvD" cm:type="ps:parent">
+          <cm:target cm:id="iaHzPP6fyGowcPIf4">./i7G3rTS94L1duzd4q</cm:target>
+        </cm:relation>
+      </cm:relations>
+      <cm:properties>
+        <cm:property cm:id="iZauFxLTM1FkMccgE" cm:type="ps:path" cm:fixed="true" cm:name="file">
+          <cm:constant cm:id="iZNGXO8cXZvD6lP1o" cm:type="ps:path">n_10.png</cm:constant>
+        </cm:property>
+        <cm:property cm:id="i_NYrzsbKri8HxHcv" cm:type="ps:filetype" cm:fixed="true" cm:name="type">
+          <cm:constant cm:id="iqcUylLNhS27wI0Rb" cm:type="ps:filetype">misc</cm:constant>
+        </cm:property>
+      </cm:properties>
+      <cm:vname>
+        <cm:mimedesc cm:id="iuBuYDP1RXg7Pyhsc" cm:mimetype="text/plain" cm:encoding="utf-8">n_10.png</cm:mimedesc>
+      </cm:vname>
+    </cm:element>
+    <cm:element cm:id="iVyTe00912-eZkOPp" cm:type="ex:img" cm:class="ps:part" cm:default="on">
+      <cm:relations cm:id="ia4KtW7-1fbjFlfDG" cm:class="ps:dependencies">
+      </cm:relations>
+      <cm:relations cm:id="ir6keP-TmHwkDgZXN" cm:class="ps:parents">
+        <cm:relation cm:id="ixwjrJ8HoFZq0rNuU" cm:type="ps:parent">
+          <cm:target cm:id="ic-0cUtjPjjH1pGqG">./iMVbWtEcXdXh7LfKO</cm:target>
+        </cm:relation>
+      </cm:relations>
+      <cm:relations cm:id="iK36JLfTtkaTlq33W" cm:class="ps:children">
+        <cm:relation cm:id="iuRnqPq-ZT9kKR5gu" cm:type="ps:optional">
+          <cm:target cm:id="iZhvso1r8NAuQATl2">./ipKcBK62_Yml8VDnx</cm:target>
+        </cm:relation>
+      </cm:relations>
+      <cm:vname>
+        <cm:mimedesc cm:id="iEu3QhdSWC0OD_ooR" cm:mimetype="text/plain" cm:encoding="utf-8">n_11</cm:mimedesc>
+      </cm:vname>
+    </cm:element>
+    <cm:element cm:id="ipKcBK62_Yml8VDnx" cm:type="ps:file" cm:class="ps:source" cm:default="on">
+      <cm:relations cm:id="iZgS4LBnKF4waLRTW" cm:class="ps:dependencies">
+      </cm:relations>
+      <cm:relations cm:id="iYr8wE9WlZaDfGCmn" cm:class="ps:parents">
+        <cm:relation cm:id="ioXw27OKuGto_OLTE" cm:type="ps:parent">
+          <cm:target cm:id="iyiVwNG7XN1Fp34RF">./iVyTe00912-eZkOPp</cm:target>
+        </cm:relation>
+      </cm:relations>
+      <cm:properties>
+        <cm:property cm:id="iLBLyI7miU7macMxL" cm:type="ps:path" cm:fixed="true" cm:name="file">
+          <cm:constant cm:id="iK9vlHRi2f-ZHyKcs" cm:type="ps:path">n_11.png</cm:constant>
+        </cm:property>
+        <cm:property cm:id="iEC9SI8-PePGre2yp" cm:type="ps:filetype" cm:fixed="true" cm:name="type">
+          <cm:constant cm:id="iEDoUrNt7PmHTHLct" cm:type="ps:filetype">misc</cm:constant>
+        </cm:property>
+      </cm:properties>
+      <cm:vname>
+        <cm:mimedesc cm:id="igWvDCazoKaisW0ZB" cm:mimetype="text/plain" cm:encoding="utf-8">n_11.png</cm:mimedesc>
+      </cm:vname>
+    </cm:element>
+    <cm:element cm:id="iBxd73Ag6o3jV6xj6" cm:type="ex:img" cm:class="ps:part" cm:default="on">
+      <cm:relations cm:id="iSHXj0MDHlD1fXVDg" cm:class="ps:dependencies">
+      </cm:relations>
+      <cm:relations cm:id="i7NzHmyT2WMlK59ka" cm:class="ps:parents">
+        <cm:relation cm:id="iYXltQPK-uyJoOAQJ" cm:type="ps:parent">
+          <cm:target cm:id="i1WGnRzJJOSDnLz4_">./iMVbWtEcXdXh7LfKO</cm:target>
+        </cm:relation>
+      </cm:relations>
+      <cm:relations cm:id="i3Kbo4MrBfRb4_Rsi" cm:class="ps:children">
+        <cm:relation cm:id="ipx2P7erHch1gcoNS" cm:type="ps:optional">
+          <cm:target cm:id="iDc38qIVUGq_wLdCb">./iYdrp0hlg1EoRjeCm</cm:target>
+        </cm:relation>
+      </cm:relations>
+      <cm:vname>
+        <cm:mimedesc cm:id="ivr4oZyWfMXu_K87f" cm:mimetype="text/plain" cm:encoding="utf-8">n_12</cm:mimedesc>
+      </cm:vname>
+    </cm:element>
+    <cm:element cm:id="iYdrp0hlg1EoRjeCm" cm:type="ps:file" cm:class="ps:source" cm:default="on">
+      <cm:relations cm:id="iR8O4Wcn7oEV-UlQQ" cm:class="ps:dependencies">
+      </cm:relations>
+      <cm:relations cm:id="iSkGZTds2ABWgE49k" cm:class="ps:parents">
+        <cm:relation cm:id="iUeIARK8kEM3gT4x4" cm:type="ps:parent">
+          <cm:target cm:id="ibz6zvAn7FlaB-efn">./iBxd73Ag6o3jV6xj6</cm:target>
+        </cm:relation>
+      </cm:relations>
+      <cm:properties>
+        <cm:property cm:id="ilfq6BRZGA-sztrr0" cm:type="ps:path" cm:fixed="true" cm:name="file">
+          <cm:constant cm:id="iRLCPPSB8xW0N35C8" cm:type="ps:path">n_12.png</cm:constant>
+        </cm:property>
+        <cm:property cm:id="iEr2KjFLtRHTXP2Tl" cm:type="ps:filetype" cm:fixed="true" cm:name="type">
+          <cm:constant cm:id="inj5E5LFKbVBYI5ys" cm:type="ps:filetype">misc</cm:constant>
+        </cm:property>
+      </cm:properties>
+      <cm:vname>
+        <cm:mimedesc cm:id="iIRnXf7muw2XqmvXh" cm:mimetype="text/plain" cm:encoding="utf-8">n_12.png</cm:mimedesc>
+      </cm:vname>
+    </cm:element>
+    <cm:element cm:id="i_f7EeV2wcOSLo_0C" cm:type="ex:img" cm:class="ps:part" cm:default="on">
+      <cm:relations cm:id="iDoWJM3IeVMrfVdpr" cm:class="ps:dependencies">
+      </cm:relations>
+      <cm:relations cm:id="i9Y4SE7BMgVUxPq8f" cm:class="ps:parents">
+        <cm:relation cm:id="i9QRLn0gGv0tnBIcD" cm:type="ps:parent">
+          <cm:target cm:id="icASAo4vh388jiSz0">./iMVbWtEcXdXh7LfKO</cm:target>
+        </cm:relation>
+      </cm:relations>
+      <cm:relations cm:id="ix9Qb-CvODVlPfiS1" cm:class="ps:children">
+        <cm:relation cm:id="i3j2DGvKx-YBVpXBx" cm:type="ps:optional">
+          <cm:target cm:id="iN2DWPD9z92yj2h5x">./iUcIoqrtb9QJysCT5</cm:target>
+        </cm:relation>
+      </cm:relations>
+      <cm:vname>
+        <cm:mimedesc cm:id="iIL5_h3aHzF67PqFq" cm:mimetype="text/plain" cm:encoding="utf-8">n_13</cm:mimedesc>
+      </cm:vname>
+    </cm:element>
+    <cm:element cm:id="iUcIoqrtb9QJysCT5" cm:type="ps:file" cm:class="ps:source" cm:default="on">
+      <cm:relations cm:id="ieJfOXWtFfg4uhK0t" cm:class="ps:dependencies">
+      </cm:relations>
+      <cm:relations cm:id="iIdNgq-w8dcTCI56Q" cm:class="ps:parents">
+        <cm:relation cm:id="iZeaYSSKi3TM7uvzB" cm:type="ps:parent">
+          <cm:target cm:id="iERtRZ2fxCpVuYTpC">./i_f7EeV2wcOSLo_0C</cm:target>
+        </cm:relation>
+      </cm:relations>
+      <cm:properties>
+        <cm:property cm:id="ijtBE4EuJ6N-IQSYR" cm:type="ps:path" cm:fixed="true" cm:name="file">
+          <cm:constant cm:id="iGsIJzHlPFV5SCt7c" cm:type="ps:path">n_13.png</cm:constant>
+        </cm:property>
+        <cm:property cm:id="iQanJItUgjgeCG7Pn" cm:type="ps:filetype" cm:fixed="true" cm:name="type">
+          <cm:constant cm:id="i02VVp9W0Ss0wXU_L" cm:type="ps:filetype">misc</cm:constant>
+        </cm:property>
+      </cm:properties>
+      <cm:vname>
+        <cm:mimedesc cm:id="iq1J6sVc9xHBvel0D" cm:mimetype="text/plain" cm:encoding="utf-8">n_13.png</cm:mimedesc>
+      </cm:vname>
+    </cm:element>
+    <cm:element cm:id="i-ItJ13DhInGT7TwB" cm:type="ex:img" cm:class="ps:part" cm:default="on">
+      <cm:relations cm:id="ioPbmnJ5dkliZNrB6" cm:class="ps:dependencies">
+      </cm:relations>
+      <cm:relations cm:id="i2nPLFY7ZThykrX7g" cm:class="ps:parents">
+        <cm:relation cm:id="iDXtWrd1U67-n1daF" cm:type="ps:parent">
+          <cm:target cm:id="irv9m2LtLPSkFqeuL">./iMVbWtEcXdXh7LfKO</cm:target>
+        </cm:relation>
+      </cm:relations>
+      <cm:relations cm:id="ieHzD4Yf85y-o_T95" cm:class="ps:children">
+        <cm:relation cm:id="iNXhOrLr0-C_OgUZY" cm:type="ps:optional">
+          <cm:target cm:id="ibUdFEUMXymPFI-Se">./i63ME3cbDOB4zcQzQ</cm:target>
+        </cm:relation>
+      </cm:relations>
+      <cm:vname>
+        <cm:mimedesc cm:id="i3sfKwV6qwAqAZGde" cm:mimetype="text/plain" cm:encoding="utf-8">n_2</cm:mimedesc>
+      </cm:vname>
+    </cm:element>
+    <cm:element cm:id="i63ME3cbDOB4zcQzQ" cm:type="ps:file" cm:class="ps:source" cm:default="on">
+      <cm:relations cm:id="i0D3Zvg2XRWudwFRL" cm:class="ps:dependencies">
+      </cm:relations>
+      <cm:relations cm:id="itNYK1OSe-5cn_cKN" cm:class="ps:parents">
+        <cm:relation cm:id="iuVtmN-HbqAY35mnt" cm:type="ps:parent">
+          <cm:target cm:id="ifZi57Xr-BWxt3gLM">./i-ItJ13DhInGT7TwB</cm:target>
+        </cm:relation>
+      </cm:relations>
+      <cm:properties>
+        <cm:property cm:id="iO1GB0Jg3Q-INR6Fr" cm:type="ps:path" cm:fixed="true" cm:name="file">
+          <cm:constant cm:id="iFFSz7A8jq2E0FAsf" cm:type="ps:path">n_2.png</cm:constant>
+        </cm:property>
+        <cm:property cm:id="iPCO-dU1t3Mj5W9gk" cm:type="ps:filetype" cm:fixed="true" cm:name="type">
+          <cm:constant cm:id="i2o6Q_PePUyqqYRAX" cm:type="ps:filetype">misc</cm:constant>
+        </cm:property>
+      </cm:properties>
+      <cm:vname>
+        <cm:mimedesc cm:id="i4yIcc5QBopkR56Uw" cm:mimetype="text/plain" cm:encoding="utf-8">n_2.png</cm:mimedesc>
+      </cm:vname>
+    </cm:element>
+    <cm:element cm:id="i_HAR5DsdLTMTntGn" cm:type="ex:img" cm:class="ps:part" cm:default="on">
+      <cm:relations cm:id="iLgFuBfOkbgxfaVfc" cm:class="ps:dependencies">
+      </cm:relations>
+      <cm:relations cm:id="iixgQuL9-GgwL4O8Y" cm:class="ps:parents">
+        <cm:relation cm:id="iW2qT00ceRbGhZg2k" cm:type="ps:parent">
+          <cm:target cm:id="i0tV222dG3H5GV9wZ">./iMVbWtEcXdXh7LfKO</cm:target>
+        </cm:relation>
+      </cm:relations>
+      <cm:relations cm:id="i5QzjgYs0UJizZEW2" cm:class="ps:children">
+        <cm:relation cm:id="iQJLBDoWe-czdsEE6" cm:type="ps:optional">
+          <cm:target cm:id="ifDNNr6XNR8cfQSsG">./iL_kDySaBO0gxSXtL</cm:target>
+        </cm:relation>
+      </cm:relations>
+      <cm:vname>
+        <cm:mimedesc cm:id="idRSWit1dgnb_cM_c" cm:mimetype="text/plain" cm:encoding="utf-8">n_3</cm:mimedesc>
+      </cm:vname>
+    </cm:element>
+    <cm:element cm:id="iL_kDySaBO0gxSXtL" cm:type="ps:file" cm:class="ps:source" cm:default="on">
+      <cm:relations cm:id="i10PfHjVzE28txQFe" cm:class="ps:dependencies">
+      </cm:relations>
+      <cm:relations cm:id="izQElryARx4A1q0L2" cm:class="ps:parents">
+        <cm:relation cm:id="iGgKWu1wWDRyFYBiO" cm:type="ps:parent">
+          <cm:target cm:id="iye3YA0bEg05N-M0l">./i_HAR5DsdLTMTntGn</cm:target>
+        </cm:relation>
+      </cm:relations>
+      <cm:properties>
+        <cm:property cm:id="iyvawfJUe0B5Rva3H" cm:type="ps:path" cm:fixed="true" cm:name="file">
+          <cm:constant cm:id="iWF5aUQVr4yRGeE6Q" cm:type="ps:path">n_3.png</cm:constant>
+        </cm:property>
+        <cm:property cm:id="ic9IJHrxo9e1YWobz" cm:type="ps:filetype" cm:fixed="true" cm:name="type">
+          <cm:constant cm:id="iVXfB98_zYi7cPrEZ" cm:type="ps:filetype">misc</cm:constant>
+        </cm:property>
+      </cm:properties>
+      <cm:vname>
+        <cm:mimedesc cm:id="i9F8wTCKrQT312z2a" cm:mimetype="text/plain" cm:encoding="utf-8">n_3.png</cm:mimedesc>
+      </cm:vname>
+    </cm:element>
+    <cm:element cm:id="iqUxTVK6IJFIE7NTY" cm:type="ex:img" cm:class="ps:part" cm:default="on">
+      <cm:relations cm:id="ivIHFArgVU4TpRoPS" cm:class="ps:dependencies">
+      </cm:relations>
+      <cm:relations cm:id="i-ZjwtlMZxXAjYxlC" cm:class="ps:parents">
+        <cm:relation cm:id="iCMSXqXgQEOweFGvO" cm:type="ps:parent">
+          <cm:target cm:id="iVhmrBbtIyj9MZc8i">./iMVbWtEcXdXh7LfKO</cm:target>
+        </cm:relation>
+      </cm:relations>
+      <cm:relations cm:id="im32DDcdwzpL4BJ_-" cm:class="ps:children">
+        <cm:relation cm:id="iY4LUJgYnbm5sc1xg" cm:type="ps:optional">
+          <cm:target cm:id="i1oZKvfOv5VXS37xd">./ik1sFzYrxErgYlUH7</cm:target>
+        </cm:relation>
+      </cm:relations>
+      <cm:vname>
+        <cm:mimedesc cm:id="iKieuf30Yjv09Vkk_" cm:mimetype="text/plain" cm:encoding="utf-8">n_4</cm:mimedesc>
+      </cm:vname>
+    </cm:element>
+    <cm:element cm:id="ik1sFzYrxErgYlUH7" cm:type="ps:file" cm:class="ps:source" cm:default="on">
+      <cm:relations cm:id="iqn17J4IS62J1GMGq" cm:class="ps:dependencies">
+      </cm:relations>
+      <cm:relations cm:id="iZZoih9OjXOA-LVt8" cm:class="ps:parents">
+        <cm:relation cm:id="ifHzE7235G1IDGXjr" cm:type="ps:parent">
+          <cm:target cm:id="i0Frpz1Fcw_xYlLwM">./iqUxTVK6IJFIE7NTY</cm:target>
+        </cm:relation>
+      </cm:relations>
+      <cm:properties>
+        <cm:property cm:id="iopIsVqI1a0Hl56Uw" cm:type="ps:path" cm:fixed="true" cm:name="file">
+          <cm:constant cm:id="iUZcqfRI8wNKUzNRY" cm:type="ps:path">n_4.png</cm:constant>
+        </cm:property>
+        <cm:property cm:id="ilgJG1FnYQTBs7stN" cm:type="ps:filetype" cm:fixed="true" cm:name="type">
+          <cm:constant cm:id="iRTcCk1kaPOLGNj3S" cm:type="ps:filetype">misc</cm:constant>
+        </cm:property>
+      </cm:properties>
+      <cm:vname>
+        <cm:mimedesc cm:id="i540bJKjpeDL_daov" cm:mimetype="text/plain" cm:encoding="utf-8">n_4.png</cm:mimedesc>
+      </cm:vname>
+    </cm:element>
+    <cm:element cm:id="i6zJOula3l9QkJ-jc" cm:type="ex:img" cm:class="ps:part" cm:default="on">
+      <cm:relations cm:id="iSmrd8YzCV4bXVT4M" cm:class="ps:dependencies">
+      </cm:relations>
+      <cm:relations cm:id="i5G8FQH3sgKXSjDwn" cm:class="ps:parents">
+        <cm:relation cm:id="inEMX1ug-VcFdrMyO" cm:type="ps:parent">
+          <cm:target cm:id="iLxIRWo-Ft7v9rLpm">./iMVbWtEcXdXh7LfKO</cm:target>
+        </cm:relation>
+      </cm:relations>
+      <cm:relations cm:id="iKOoCuA17lAbKeEtA" cm:class="ps:children">
+        <cm:relation cm:id="iDFGOQaJm_G1c1WdR" cm:type="ps:optional">
+          <cm:target cm:id="iAhcHpTo5mt8rEHC_">./iksmTxdN7ppfNjv9v</cm:target>
+        </cm:relation>
+      </cm:relations>
+      <cm:vname>
+        <cm:mimedesc cm:id="il2iPnu-dkUbqPcCt" cm:mimetype="text/plain" cm:encoding="utf-8">n_5</cm:mimedesc>
+      </cm:vname>
+    </cm:element>
+    <cm:element cm:id="iksmTxdN7ppfNjv9v" cm:type="ps:file" cm:class="ps:source" cm:default="on">
+      <cm:relations cm:id="iqWVHG8aZRh0KaB-L" cm:class="ps:dependencies">
+      </cm:relations>
+      <cm:relations cm:id="idsKwVAUAMtDXCCN7" cm:class="ps:parents">
+        <cm:relation cm:id="iNINdh3in6hZ7GtDu" cm:type="ps:parent">
+          <cm:target cm:id="iwMVxOjH1x7ZJL5y4">./i6zJOula3l9QkJ-jc</cm:target>
+        </cm:relation>
+      </cm:relations>
+      <cm:properties>
+        <cm:property cm:id="i_mobYzloMZFN5GSQ" cm:type="ps:path" cm:fixed="true" cm:name="file">
+          <cm:constant cm:id="iNFIbFwNYXUSPfKdG" cm:type="ps:path">n_5.png</cm:constant>
+        </cm:property>
+        <cm:property cm:id="igV6Pt4upAI57mVWf" cm:type="ps:filetype" cm:fixed="true" cm:name="type">
+          <cm:constant cm:id="i20AJzTKjaXrI7E_W" cm:type="ps:filetype">misc</cm:constant>
+        </cm:property>
+      </cm:properties>
+      <cm:vname>
+        <cm:mimedesc cm:id="i6QLHrFvlNtW51okg" cm:mimetype="text/plain" cm:encoding="utf-8">n_5.png</cm:mimedesc>
+      </cm:vname>
+    </cm:element>
+    <cm:element cm:id="i9s1ZtwmfbepP7Y-M" cm:type="ex:img" cm:class="ps:part" cm:default="on">
+      <cm:relations cm:id="il4zDEQmmoEoa5W4A" cm:class="ps:dependencies">
+      </cm:relations>
+      <cm:relations cm:id="ifRtkRLRT1yxhq5qF" cm:class="ps:parents">
+        <cm:relation cm:id="ic_zJrxs7SuH5Qen9" cm:type="ps:parent">
+          <cm:target cm:id="i3iokHYKyCXC_42A7">./iMVbWtEcXdXh7LfKO</cm:target>
+        </cm:relation>
+      </cm:relations>
+      <cm:relations cm:id="iz5-cCpsQ-vSF2OxO" cm:class="ps:children">
+        <cm:relation cm:id="iOs0Zy4niQkqf2Cpw" cm:type="ps:optional">
+          <cm:target cm:id="iKqRGyAlF9sr2o3bc">./iVaB_bGCosE7Nren9</cm:target>
+        </cm:relation>
+      </cm:relations>
+      <cm:vname>
+        <cm:mimedesc cm:id="ixxS-PtxbhJ8oTfzE" cm:mimetype="text/plain" cm:encoding="utf-8">n_6</cm:mimedesc>
+      </cm:vname>
+    </cm:element>
+    <cm:element cm:id="iVaB_bGCosE7Nren9" cm:type="ps:file" cm:class="ps:source" cm:default="on">
+      <cm:relations cm:id="i6oqU19sWyxlkyyce" cm:class="ps:dependencies">
+      </cm:relations>
+      <cm:relations cm:id="iLwfC56ahXiFkCNkF" cm:class="ps:parents">
+        <cm:relation cm:id="iRcuiQcv_dMUydQ5_" cm:type="ps:parent">
+          <cm:target cm:id="iEUlsnBR7Gev_ig-3">./i9s1ZtwmfbepP7Y-M</cm:target>
+        </cm:relation>
+      </cm:relations>
+      <cm:properties>
+        <cm:property cm:id="iBBvFULpGL8Y1OkR5" cm:type="ps:path" cm:fixed="true" cm:name="file">
+          <cm:constant cm:id="ifnmaM9qBpM_Fcg0m" cm:type="ps:path">n_6.png</cm:constant>
+        </cm:property>
+        <cm:property cm:id="iRj6NuO13sffpq4q0" cm:type="ps:filetype" cm:fixed="true" cm:name="type">
+          <cm:constant cm:id="ijHcCieWX-d72pTeh" cm:type="ps:filetype">misc</cm:constant>
+        </cm:property>
+      </cm:properties>
+      <cm:vname>
+        <cm:mimedesc cm:id="iFa9JwzrEqbOvy1iy" cm:mimetype="text/plain" cm:encoding="utf-8">n_6.png</cm:mimedesc>
+      </cm:vname>
+    </cm:element>
+    <cm:element cm:id="irguJcQUSlONsBQcb" cm:type="ex:img" cm:class="ps:part" cm:default="on">
+      <cm:relations cm:id="izbdU8wVj6i09qqz-" cm:class="ps:dependencies">
+      </cm:relations>
+      <cm:relations cm:id="imnaF5bIsolBygSRY" cm:class="ps:parents">
+        <cm:relation cm:id="iBcaG2Hgy1hUlJrJ1" cm:type="ps:parent">
+          <cm:target cm:id="i43VGOhQ0uQVFpsE9">./iMVbWtEcXdXh7LfKO</cm:target>
+        </cm:relation>
+      </cm:relations>
+      <cm:relations cm:id="iZtW9qUInskRZlS1k" cm:class="ps:children">
+        <cm:relation cm:id="iZZ7bTHl34nPomWNy" cm:type="ps:optional">
+          <cm:target cm:id="iDdjGsgb54NV-h1yj">./ihCDN1SGQ1StRZ5IH</cm:target>
+        </cm:relation>
+      </cm:relations>
+      <cm:vname>
+        <cm:mimedesc cm:id="i0xdPfnJovRLuhMdg" cm:mimetype="text/plain" cm:encoding="utf-8">n_7</cm:mimedesc>
+      </cm:vname>
+    </cm:element>
+    <cm:element cm:id="ihCDN1SGQ1StRZ5IH" cm:type="ps:file" cm:class="ps:source" cm:default="on">
+      <cm:relations cm:id="iEryJ0uE5xbaBKQJl" cm:class="ps:dependencies">
+      </cm:relations>
+      <cm:relations cm:id="irrogIhsn9-oC3Cug" cm:class="ps:parents">
+        <cm:relation cm:id="iEl-S6E3Jt-F8GsNH" cm:type="ps:parent">
+          <cm:target cm:id="ixjCap3TXCwfHQilM">./irguJcQUSlONsBQcb</cm:target>
+        </cm:relation>
+      </cm:relations>
+      <cm:properties>
+        <cm:property cm:id="iLL5rq2SVZOBZl-cx" cm:type="ps:path" cm:fixed="true" cm:name="file">
+          <cm:constant cm:id="itzL4vNeEjlxZloeT" cm:type="ps:path">n_7.png</cm:constant>
+        </cm:property>
+        <cm:property cm:id="ixyVDUesYIauZCY4T" cm:type="ps:filetype" cm:fixed="true" cm:name="type">
+          <cm:constant cm:id="iOOd5WuM4Y6vYJyTw" cm:type="ps:filetype">misc</cm:constant>
+        </cm:property>
+      </cm:properties>
+      <cm:vname>
+        <cm:mimedesc cm:id="izhOCFsH-AFaOZ_6N" cm:mimetype="text/plain" cm:encoding="utf-8">n_7.png</cm:mimedesc>
+      </cm:vname>
+    </cm:element>
+    <cm:element cm:id="iRZ7uccHEcrwim35b" cm:type="ex:img" cm:class="ps:part" cm:default="on">
+      <cm:relations cm:id="iOUMqKjdKrNTSjRMe" cm:class="ps:dependencies">
+      </cm:relations>
+      <cm:relations cm:id="i5NVR89YctpiaRn6i" cm:class="ps:parents">
+        <cm:relation cm:id="iBZFO03c-anK7tpif" cm:type="ps:parent">
+          <cm:target cm:id="irP4MM3WLXeEIewSR">./iMVbWtEcXdXh7LfKO</cm:target>
+        </cm:relation>
+      </cm:relations>
+      <cm:relations cm:id="irER56gIMCXNi7YMb" cm:class="ps:children">
+        <cm:relation cm:id="iOkg6FMleQmM670zu" cm:type="ps:optional">
+          <cm:target cm:id="iaj5by_OF-H_IceEo">./i1XFksYaP5znedoAI</cm:target>
+        </cm:relation>
+      </cm:relations>
+      <cm:vname>
+        <cm:mimedesc cm:id="irUw4rdKWSV5XdD9A" cm:mimetype="text/plain" cm:encoding="utf-8">n_8</cm:mimedesc>
+      </cm:vname>
+    </cm:element>
+    <cm:element cm:id="i1XFksYaP5znedoAI" cm:type="ps:file" cm:class="ps:source" cm:default="on">
+      <cm:relations cm:id="iaMQMu2WUyH9BWsKk" cm:class="ps:dependencies">
+      </cm:relations>
+      <cm:relations cm:id="iMTWyuNwuEEUJq2lA" cm:class="ps:parents">
+        <cm:relation cm:id="iMvjK4bofTyvR6vik" cm:type="ps:parent">
+          <cm:target cm:id="ihvOogWN9P6DoO8SE">./iRZ7uccHEcrwim35b</cm:target>
+        </cm:relation>
+      </cm:relations>
+      <cm:properties>
+        <cm:property cm:id="io6s0heP4Z0FxBLft" cm:type="ps:path" cm:fixed="true" cm:name="file">
+          <cm:constant cm:id="ikgdgmZwuXqXkD1Nt" cm:type="ps:path">n_8.png</cm:constant>
+        </cm:property>
+        <cm:property cm:id="i6ro8n6-NlkPSUyyT" cm:type="ps:filetype" cm:fixed="true" cm:name="type">
+          <cm:constant cm:id="icpLAicalgtL5efBm" cm:type="ps:filetype">misc</cm:constant>
+        </cm:property>
+      </cm:properties>
+      <cm:vname>
+        <cm:mimedesc cm:id="i8-BslmuEH9vL_BxW" cm:mimetype="text/plain" cm:encoding="utf-8">n_8.png</cm:mimedesc>
+      </cm:vname>
+    </cm:element>
+    <cm:element cm:id="iG3q3eZhADaj5hVEU" cm:type="ex:img" cm:class="ps:part" cm:default="on">
+      <cm:relations cm:id="iuBKO3biWKH-n2JIN" cm:class="ps:dependencies">
+      </cm:relations>
+      <cm:relations cm:id="ic8jAX6xKgZHUeFRD" cm:class="ps:parents">
+        <cm:relation cm:id="iMp9gAhvBvUoO3GBr" cm:type="ps:parent">
+          <cm:target cm:id="ig_L8_o00L1lS84D7">./iMVbWtEcXdXh7LfKO</cm:target>
+        </cm:relation>
+      </cm:relations>
+      <cm:relations cm:id="ibzOHWCykpylszYrK" cm:class="ps:children">
+        <cm:relation cm:id="iCBBxxbEBxigM0o1K" cm:type="ps:optional">
+          <cm:target cm:id="iPkSOKnbJA6q_kGcp">./iaJPgk0z4QA8NN3gl</cm:target>
+        </cm:relation>
+      </cm:relations>
+      <cm:vname>
+        <cm:mimedesc cm:id="i-IrWCFqUBjTu5VBZ" cm:mimetype="text/plain" cm:encoding="utf-8">n_9</cm:mimedesc>
+      </cm:vname>
+    </cm:element>
+    <cm:element cm:id="iaJPgk0z4QA8NN3gl" cm:type="ps:file" cm:class="ps:source" cm:default="on">
+      <cm:relations cm:id="inL9_F98K9wIIKP7N" cm:class="ps:dependencies">
+      </cm:relations>
+      <cm:relations cm:id="iq_npWJtuIhjqdR54" cm:class="ps:parents">
+        <cm:relation cm:id="iNG0DbM12yUEil0Kw" cm:type="ps:parent">
+          <cm:target cm:id="ijYeBH4pOrvwOcvfk">./iG3q3eZhADaj5hVEU</cm:target>
+        </cm:relation>
+      </cm:relations>
+      <cm:properties>
+        <cm:property cm:id="i6dt_wEgPB7dUXunb" cm:type="ps:path" cm:fixed="true" cm:name="file">
+          <cm:constant cm:id="iP5ZdenBMzre4tMe_" cm:type="ps:path">n_9.png</cm:constant>
+        </cm:property>
+        <cm:property cm:id="iS-hJ02E3iydGuvvB" cm:type="ps:filetype" cm:fixed="true" cm:name="type">
+          <cm:constant cm:id="i4BhN_1rHoMi_l121" cm:type="ps:filetype">misc</cm:constant>
+        </cm:property>
+      </cm:properties>
+      <cm:vname>
+        <cm:mimedesc cm:id="iJsGBYuPoQvhWCN-4" cm:mimetype="text/plain" cm:encoding="utf-8">n_9.png</cm:mimedesc>
+      </cm:vname>
+    </cm:element>
+    <cm:element cm:id="iNUfGsMTDwfTJVUY9" cm:type="ex:img" cm:class="ps:part" cm:default="on">
+      <cm:relations cm:id="iIFAbXaMOZC8g4Wpr" cm:class="ps:dependencies">
+      </cm:relations>
+      <cm:relations cm:id="i2gkwYaWuQSNm3OxA" cm:class="ps:parents">
+        <cm:relation cm:id="iJGWt2s_2bbGTjZt6" cm:type="ps:parent">
+          <cm:target cm:id="itGhzrnQHD5-Tapee">./iMVbWtEcXdXh7LfKO</cm:target>
+        </cm:relation>
+      </cm:relations>
+      <cm:relations cm:id="i1EVQATjCerpWzSPx" cm:class="ps:children">
+        <cm:relation cm:id="i6HItDFmv2PEMbj-G" cm:type="ps:optional">
+          <cm:target cm:id="izAEoEm8SxqlViehY">./iewYCNlXSiCs2EldN</cm:target>
+        </cm:relation>
+      </cm:relations>
+      <cm:vname>
+        <cm:mimedesc cm:id="ixYkgZpI8J2QDmkg8" cm:mimetype="text/plain" cm:encoding="utf-8">tacho</cm:mimedesc>
+      </cm:vname>
+    </cm:element>
+    <cm:element cm:id="iewYCNlXSiCs2EldN" cm:type="ps:file" cm:class="ps:source" cm:default="on">
+      <cm:relations cm:id="i8Pbl2Qwfw0sxvNCB" cm:class="ps:dependencies">
+      </cm:relations>
+      <cm:relations cm:id="ioHHfyvHWh_Z_YYJW" cm:class="ps:parents">
+        <cm:relation cm:id="iInoiCygS2V8HaUmc" cm:type="ps:parent">
+          <cm:target cm:id="iLJPUlU3iF4BpKDYj">./iNUfGsMTDwfTJVUY9</cm:target>
+        </cm:relation>
+      </cm:relations>
+      <cm:properties>
+        <cm:property cm:id="ixdgZ8YG-zP-OqXAO" cm:type="ps:path" cm:fixed="true" cm:name="file">
+          <cm:constant cm:id="i-PzoaWj4F40HCSCg" cm:type="ps:path">tacho.png</cm:constant>
+        </cm:property>
+        <cm:property cm:id="ib0Hcn_CQOSTPga-V" cm:type="ps:filetype" cm:fixed="true" cm:name="type">
+          <cm:constant cm:id="iULVAeU0SdbIx4FJR" cm:type="ps:filetype">misc</cm:constant>
+        </cm:property>
+      </cm:properties>
+      <cm:vname>
+        <cm:mimedesc cm:id="iJXEVq2CBRulWm0q1" cm:mimetype="text/plain" cm:encoding="utf-8">tacho.png</cm:mimedesc>
+      </cm:vname>
+    </cm:element>
+    <cm:element cm:id="ijwd_xX0L7tdhfGhu" cm:type="ex:img" cm:class="ps:part" cm:default="on">
+      <cm:relations cm:id="itzU2XrS3UW0DPrue" cm:class="ps:dependencies">
+      </cm:relations>
+      <cm:relations cm:id="iZHOZenhydIrhrG4b" cm:class="ps:parents">
+        <cm:relation cm:id="i-1Nn9YjEpK4Ip46P" cm:type="ps:parent">
+          <cm:target cm:id="i8zIarlwgPHv0uyF_">./iMVbWtEcXdXh7LfKO</cm:target>
+        </cm:relation>
+      </cm:relations>
+      <cm:relations cm:id="iv4BCMPkuFjH3UCB0" cm:class="ps:children">
+        <cm:relation cm:id="its5aV0dnnrjJUQgS" cm:type="ps:optional">
+          <cm:target cm:id="iVLVrafsvRDjXv6K5">./iHlCXCHY2cbx2-7Ml</cm:target>
+        </cm:relation>
+      </cm:relations>
+      <cm:vname>
+        <cm:mimedesc cm:id="itCoUh0KHaahL8xt-" cm:mimetype="text/plain" cm:encoding="utf-8">thermometer_inner_top</cm:mimedesc>
+      </cm:vname>
+    </cm:element>
+    <cm:element cm:id="iHlCXCHY2cbx2-7Ml" cm:type="ps:file" cm:class="ps:source" cm:default="on">
+      <cm:relations cm:id="if7GDmqASkRK0O3Od" cm:class="ps:dependencies">
+      </cm:relations>
+      <cm:relations cm:id="iP7416sw5QiOnw8XA" cm:class="ps:parents">
+        <cm:relation cm:id="i6QxjVA27Zi7rVeQC" cm:type="ps:parent">
+          <cm:target cm:id="iuC6_Y36EMRPD3Xn8">./ijwd_xX0L7tdhfGhu</cm:target>
+        </cm:relation>
+      </cm:relations>
+      <cm:properties>
+        <cm:property cm:id="i5ETaD7EVkTGHgdIm" cm:type="ps:path" cm:fixed="true" cm:name="file">
+          <cm:constant cm:id="icDdMRdLq_5LRYTw7" cm:type="ps:path">thermometer_inner_top.png</cm:constant>
+        </cm:property>
+        <cm:property cm:id="i1uVIHOrRmnO-ecoe" cm:type="ps:filetype" cm:fixed="true" cm:name="type">
+          <cm:constant cm:id="iVAeAFqXGHbssLwfQ" cm:type="ps:filetype">misc</cm:constant>
+        </cm:property>
+      </cm:properties>
+      <cm:vname>
+        <cm:mimedesc cm:id="ipPnKvn8d0op7EqOF" cm:mimetype="text/plain" cm:encoding="utf-8">thermometer_inner_top.png</cm:mimedesc>
+      </cm:vname>
+    </cm:element>
+    <cm:element cm:id="iUjSG3ghJCQ4NTz5P" cm:type="ex:img" cm:class="ps:part" cm:default="on">
+      <cm:relations cm:id="iJYTDVy_25QrS1_px" cm:class="ps:dependencies">
+      </cm:relations>
+      <cm:relations cm:id="imvOfx3zzlszR6qW9" cm:class="ps:parents">
+        <cm:relation cm:id="iV38YRcvwrsdDHxev" cm:type="ps:parent">
+          <cm:target cm:id="iyBY17hnLZ0VmieXu">./iMVbWtEcXdXh7LfKO</cm:target>
+        </cm:relation>
+      </cm:relations>
+      <cm:relations cm:id="icLHhc8mDhv4raoZg" cm:class="ps:children">
+        <cm:relation cm:id="iCf1VWU8YIaq69dH1" cm:type="ps:optional">
+          <cm:target cm:id="iUIDa8V44VIJcb8Fr">./iCggq7B-1i2KVk1fO</cm:target>
+        </cm:relation>
+      </cm:relations>
+      <cm:vname>
+        <cm:mimedesc cm:id="ibi1bCQWVEOtuKSbJ" cm:mimetype="text/plain" cm:encoding="utf-8">thermometer_lower</cm:mimedesc>
+      </cm:vname>
+    </cm:element>
+    <cm:element cm:id="iCggq7B-1i2KVk1fO" cm:type="ps:file" cm:class="ps:source" cm:default="on">
+      <cm:relations cm:id="i5ZAwQlXVXWze0OcH" cm:class="ps:dependencies">
+      </cm:relations>
+      <cm:relations cm:id="ia5SIiot-FLnCv1AB" cm:class="ps:parents">
+        <cm:relation cm:id="imdm6O2A4CAcxMTeS" cm:type="ps:parent">
+          <cm:target cm:id="iA9w-bkxexeWKk-gn">./iUjSG3ghJCQ4NTz5P</cm:target>
+        </cm:relation>
+      </cm:relations>
+      <cm:properties>
+        <cm:property cm:id="iiSHzEcsOd8RnXZ-r" cm:type="ps:path" cm:fixed="true" cm:name="file">
+          <cm:constant cm:id="is38sudyvlNwDb3cH" cm:type="ps:path">thermometer_lower.png</cm:constant>
+        </cm:property>
+        <cm:property cm:id="ikgk4ZOn5EbbkkRlJ" cm:type="ps:filetype" cm:fixed="true" cm:name="type">
+          <cm:constant cm:id="iL0tKQ0WgYx_YCntJ" cm:type="ps:filetype">misc</cm:constant>
+        </cm:property>
+      </cm:properties>
+      <cm:vname>
+        <cm:mimedesc cm:id="iTLX4E4Nu_D0f4_MH" cm:mimetype="text/plain" cm:encoding="utf-8">thermometer_lower.png</cm:mimedesc>
+      </cm:vname>
+    </cm:element>
+    <cm:element cm:id="iH1hj_CZNQq138Gjj" cm:type="ex:img" cm:class="ps:part" cm:default="on">
+      <cm:relations cm:id="iRDZ_eadMjnOnbu54" cm:class="ps:dependencies">
+      </cm:relations>
+      <cm:relations cm:id="iqmf_FO98HL_LHVL3" cm:class="ps:parents">
+        <cm:relation cm:id="iQ4E_-Cmjjg7GwWSL" cm:type="ps:parent">
+          <cm:target cm:id="ihHdiedmVyd5yhTcJ">./iMVbWtEcXdXh7LfKO</cm:target>
+        </cm:relation>
+      </cm:relations>
+      <cm:relations cm:id="i-DiXrCFUfmwdfN_f" cm:class="ps:children">
+        <cm:relation cm:id="iaYgsMRHoN6Ucs90-" cm:type="ps:optional">
+          <cm:target cm:id="izhJLKMyVbgXTy1eA">./inb-K91NoAKjYnHSw</cm:target>
+        </cm:relation>
+      </cm:relations>
+      <cm:vname>
+        <cm:mimedesc cm:id="iuurCHwF_hU9fxiVB" cm:mimetype="text/plain" cm:encoding="utf-8">thermometer_upper</cm:mimedesc>
+      </cm:vname>
+    </cm:element>
+    <cm:element cm:id="inb-K91NoAKjYnHSw" cm:type="ps:file" cm:class="ps:source" cm:default="on">
+      <cm:relations cm:id="inBnUYpi1r37W_mSt" cm:class="ps:dependencies">
+      </cm:relations>
+      <cm:relations cm:id="i9TePHxuAvQYwNP8q" cm:class="ps:parents">
+        <cm:relation cm:id="i9zYP8xWKLuHyx1Hx" cm:type="ps:parent">
+          <cm:target cm:id="iF15MBRHj2K1AxFTI">./iH1hj_CZNQq138Gjj</cm:target>
+        </cm:relation>
+      </cm:relations>
+      <cm:properties>
+        <cm:property cm:id="i92ah9NWPFZWb4Ant" cm:type="ps:path" cm:fixed="true" cm:name="file">
+          <cm:constant cm:id="i-vwK6aJz8CHJs5d9" cm:type="ps:path">thermometer_upper.png</cm:constant>
+        </cm:property>
+        <cm:property cm:id="iCZGlPgd9p8I3SdVa" cm:type="ps:filetype" cm:fixed="true" cm:name="type">
+          <cm:constant cm:id="idMXYJ71VZobPUoLx" cm:type="ps:filetype">misc</cm:constant>
+        </cm:property>
+      </cm:properties>
+      <cm:vname>
+        <cm:mimedesc cm:id="iR2j_JCsMskI3ULuz" cm:mimetype="text/plain" cm:encoding="utf-8">thermometer_upper.png</cm:mimedesc>
+      </cm:vname>
+    </cm:element>
+    <cm:element cm:id="i2pQ0_Lrvl3lfWnqn" cm:type="ps:component" cm:class="ps:component" cm:default="on">
+      <cm:relations cm:id="iTg7UbbMZl7ouLVdS" cm:class="ps:dependencies">
+      </cm:relations>
+      <cm:relations cm:id="iy8v_CLLtsOIfqK1f" cm:class="ps:parents">
+        <cm:relation cm:id="i6ulaE9uTFazxEBz-" cm:type="ps:parent">
+          <cm:target cm:id="iRN89kSEDlbjcQxw3">./iptC2Nq3tKteaAK4r</cm:target>
+        </cm:relation>
+      </cm:relations>
+      <cm:relations cm:id="iE-Q1sZZz04IU-vm0" cm:class="ps:children">
+        <cm:relation cm:id="ijIvtmXjK5XY3cD7-" cm:type="ps:optional">
+          <cm:target cm:id="i9GhirX1pRWs4q8cs">./iaG7ra2ZWD8r_eKOX</cm:target>
+          <cm:target cm:id="inW3k67JJPED4amSW">./iejtOYTusN2HST1M6</cm:target>
+          <cm:target cm:id="iXhadmzBE3Gue5Q7-">./iPltUB7tZ5datVWpl</cm:target>
+        </cm:relation>
+      </cm:relations>
+      <cm:properties>
+        <cm:property cm:id="izZjKrAnYPsUVyCeO" cm:type="ps:directory" cm:inheritable="true" cm:fixed="true" cm:name="srcdir">
+          <cm:constant cm:id="ielib3y53NcaiCXJm" cm:type="ps:directory">./js</cm:constant>
+        </cm:property>
+        <cm:property cm:id="iitrg55iBT1HiVLS-" cm:type="ps:directory" cm:inheritable="true" cm:fixed="true" cm:name="dir">
+          <cm:constant cm:id="iTlajJ28WLNqHEo8w" cm:type="ps:directory">./js</cm:constant>
+        </cm:property>
+        
+        
+        
+        
+      </cm:properties>
+      <cm:vname>
+        <cm:mimedesc cm:id="i4KaASI3jfQ7Sj2GF" cm:mimetype="text/plain" cm:encoding="utf-8">js</cm:mimedesc>
+      </cm:vname>
+    </cm:element>
+    <cm:element cm:id="iaG7ra2ZWD8r_eKOX" cm:type="ex:js" cm:class="ps:part" cm:default="on">
+      <cm:relations cm:id="iwk6HG4AcF2_9C4Wm" cm:class="ps:dependencies">
+      </cm:relations>
+      <cm:relations cm:id="i6wjT5xTHd3C0aYs2" cm:class="ps:parents">
+        <cm:relation cm:id="iNTxVSFra22bGcdhw" cm:type="ps:parent">
+          <cm:target cm:id="ie_YFP7wwBQlYjkKG">./i2pQ0_Lrvl3lfWnqn</cm:target>
+        </cm:relation>
+      </cm:relations>
+      <cm:relations cm:id="i7kCCSJuE0WeSkSwv" cm:class="ps:children">
+        <cm:relation cm:id="iRijiOoJHa2MFNH9j" cm:type="ps:optional">
+          <cm:target cm:id="i786S7W22pBIXu7Nk">./iXlocOBgdPRKRkoU4</cm:target>
+        </cm:relation>
+      </cm:relations>
+      <cm:vname>
+        <cm:mimedesc cm:id="iT7AR22A8FHSv-kex" cm:mimetype="text/plain" cm:encoding="utf-8">scale</cm:mimedesc>
+      </cm:vname>
+    </cm:element>
+    <cm:element cm:id="iXlocOBgdPRKRkoU4" cm:type="ps:condtext" cm:class="ps:source" cm:default="on">
+      <cm:relations cm:id="iRIn3Ru2rhAHIbCNF" cm:class="ps:dependencies">
+      </cm:relations>
+      <cm:relations cm:id="ipHmLCobeaMaM1icY" cm:class="ps:parents">
+        <cm:relation cm:id="i0zbCvoPr0iVvrQIN" cm:type="ps:parent">
+          <cm:target cm:id="iIN38uXx86WQVpRJI">./iaG7ra2ZWD8r_eKOX</cm:target>
+        </cm:relation>
+      </cm:relations>
+      <cm:properties>
+        <cm:property cm:id="iTJ9f_pGRiXxtq8rr" cm:type="ps:path" cm:fixed="true" cm:name="file">
+          <cm:constant cm:id="iqujOeyCCHGTmZphC" cm:type="ps:path">scale.js</cm:constant>
+        </cm:property>
+        <cm:property cm:id="iqRb_M4q2TFCSDscd" cm:type="ps:filetype" cm:fixed="true" cm:name="type">
+          <cm:constant cm:id="i1f4gIUwpDHf9fmYR" cm:type="ps:filetype">misc</cm:constant>
+        </cm:property>
+        
+        
+        
+        
+      </cm:properties>
+      <cm:vname>
+        <cm:mimedesc cm:id="iVY4K8oL3S5t2qf6S" cm:mimetype="text/plain" cm:encoding="utf-8">scale.js</cm:mimedesc>
+      </cm:vname>
+    </cm:element>
+    <cm:element cm:id="iejtOYTusN2HST1M6" cm:type="ex:js" cm:class="ps:part" cm:default="on">
+      <cm:relations cm:id="iEtl474hcJgDJjL4d" cm:class="ps:dependencies">
+      </cm:relations>
+      <cm:relations cm:id="iUhL9smlcffR6P8PR" cm:class="ps:parents">
+        <cm:relation cm:id="i6rjBjx-z59V21aMu" cm:type="ps:parent">
+          <cm:target cm:id="i45AN8lJbpAcxG4h5">./i2pQ0_Lrvl3lfWnqn</cm:target>
+        </cm:relation>
+      </cm:relations>
+      <cm:relations cm:id="i4k0lo5Vsm9lo33GR" cm:class="ps:children">
+        <cm:relation cm:id="iWCychXVhZL7yZT3k" cm:type="ps:optional">
+          <cm:target cm:id="is8kAYpXzN59mXW_D">./i59MIC57S9CikB7zW</cm:target>
+        </cm:relation>
+      </cm:relations>
+      <cm:vname>
+        <cm:mimedesc cm:id="iT6305ug7HxzZT9sd" cm:mimetype="text/plain" cm:encoding="utf-8">sensors</cm:mimedesc>
+      </cm:vname>
+    </cm:element>
+    <cm:element cm:id="i59MIC57S9CikB7zW" cm:type="ps:condtext" cm:class="ps:source" cm:default="on">
+      <cm:relations cm:id="ijEh8GXvQmb5FdtlS" cm:class="ps:dependencies">
+      </cm:relations>
+      <cm:relations cm:id="iOnzzKCCB5zuzM789" cm:class="ps:parents">
+        <cm:relation cm:id="i8Z4HygyrF8SU27B1" cm:type="ps:parent">
+          <cm:target cm:id="iKdjdBguWmq75piil">./iejtOYTusN2HST1M6</cm:target>
+        </cm:relation>
+      </cm:relations>
+      <cm:properties>
+        <cm:property cm:id="i8gGUS5U-uerN6NBs" cm:type="ps:path" cm:fixed="true" cm:name="file">
+          <cm:constant cm:id="ixZgc5fLEnWtJTlOB" cm:type="ps:path">sensors.js</cm:constant>
+        </cm:property>
+        <cm:property cm:id="ix2ZqPoJuJK1J9Ekm" cm:type="ps:filetype" cm:fixed="true" cm:name="type">
+          <cm:constant cm:id="izjIRNFD-lbmX-UwV" cm:type="ps:filetype">misc</cm:constant>
+        </cm:property>
+        
+        
+        
+        
+      </cm:properties>
+      <cm:vname>
+        <cm:mimedesc cm:id="iRWy-xIP7vaPtYPuW" cm:mimetype="text/plain" cm:encoding="utf-8">sensors.js</cm:mimedesc>
+      </cm:vname>
+    </cm:element>
+    <cm:element cm:id="iPltUB7tZ5datVWpl" cm:type="ex:js" cm:class="ps:part" cm:default="on">
+      <cm:relations cm:id="inYt7fjYrGs3DNyka" cm:class="ps:dependencies">
+      </cm:relations>
+      <cm:relations cm:id="ihwL8sBBVcB0PGPD-" cm:class="ps:parents">
+        <cm:relation cm:id="igN5jz6qcOZjRVw6r" cm:type="ps:parent">
+          <cm:target cm:id="idHJz7WLs8rfvXNuo">./i2pQ0_Lrvl3lfWnqn</cm:target>
+        </cm:relation>
+      </cm:relations>
+      <cm:relations cm:id="iKfG94ZN0Wyq5o46L" cm:class="ps:children">
+        <cm:relation cm:id="ie4nm7NtIzXI63S9y" cm:type="ps:optional">
+          <cm:target cm:id="iNnU3isKKn0WX-qtz">./iFzHnrtxUw3xQ2V-W</cm:target>
+        </cm:relation>
+      </cm:relations>
+      <cm:vname>
+        <cm:mimedesc cm:id="izyZM1C36CUXFa-IA" cm:mimetype="text/plain" cm:encoding="utf-8">settings</cm:mimedesc>
+      </cm:vname>
+    </cm:element>
+    <cm:element cm:id="iFzHnrtxUw3xQ2V-W" cm:type="ps:condtext" cm:class="ps:source" cm:default="on">
+      <cm:relations cm:id="ipvydzzKUvivm26WJ" cm:class="ps:dependencies">
+      </cm:relations>
+      <cm:relations cm:id="iZSxA3qHBvHI1av2a" cm:class="ps:parents">
+        <cm:relation cm:id="iJNfcccswwtjUvbKr" cm:type="ps:parent">
+          <cm:target cm:id="i5aWm3BD4kbF9fqMy">./iPltUB7tZ5datVWpl</cm:target>
+        </cm:relation>
+      </cm:relations>
+      <cm:properties>
+        <cm:property cm:id="i1eNFnIM28bV0C218" cm:type="ps:path" cm:fixed="true" cm:name="file">
+          <cm:constant cm:id="i4BSgd0vCCaHE-AR4" cm:type="ps:path">settings.js</cm:constant>
+        </cm:property>
+        <cm:property cm:id="iOX4QIffxgkVCZB5I" cm:type="ps:filetype" cm:fixed="true" cm:name="type">
+          <cm:constant cm:id="ilWe-bG8R6l_vq1Fu" cm:type="ps:filetype">misc</cm:constant>
+        </cm:property>
+        
+        
+        
+        
+      </cm:properties>
+      <cm:vname>
+        <cm:mimedesc cm:id="ikiYbPKxcWE0BY2GK" cm:mimetype="text/plain" cm:encoding="utf-8">settings.js</cm:mimedesc>
+      </cm:vname>
+    </cm:element>
+    <cm:element cm:id="iaamH0N-pIJDyT-zN" cm:type="ex:doc" cm:class="ps:part" cm:default="on">
+      <cm:relations cm:id="i6bYDvd_mhdOlG6S7" cm:class="ps:dependencies">
+      </cm:relations>
+      <cm:relations cm:id="iFCroQLumqIB9CCqt" cm:class="ps:parents">
+        <cm:relation cm:id="iUCIwHaxKq2dw3N-a" cm:type="ps:parent">
+          <cm:target cm:id="iRI_7Fotq1_SThhMu">./iptC2Nq3tKteaAK4r</cm:target>
+        </cm:relation>
+      </cm:relations>
+      <cm:relations cm:id="iNP9bKMz4rHr_jp_8" cm:class="ps:children">
+        <cm:relation cm:id="iqluuSrHJhmrAyqhN" cm:type="ps:optional">
+          <cm:target cm:id="i7BeA7u-joChl_hBK">./iCFmQUZ77pCQOJtJ3</cm:target>
+        </cm:relation>
+      </cm:relations>
+      <cm:properties>
+        
+        
+        
+        
+      </cm:properties>
+      <cm:vname>
+        <cm:mimedesc cm:id="iYTUnfomOhogCzI6m" cm:mimetype="text/plain" cm:encoding="utf-8">Weather Station User Manual</cm:mimedesc>
+      </cm:vname>
+    </cm:element>
+    <cm:element cm:id="ikANZCfrIOSpd7W5l" cm:type="ex:html" cm:class="ps:part" cm:default="on">
+      <cm:relations cm:id="iEJdEAHFZ9XVcH_x5" cm:class="ps:dependencies">
+      </cm:relations>
+      <cm:relations cm:id="iRP9b4q2UJBnhGyDZ" cm:class="ps:parents">
+        <cm:relation cm:id="idCeGEbj31z4t2qaS" cm:type="ps:parent">
+          <cm:target cm:id="ip-7dugZgK8i1OKc_">./iptC2Nq3tKteaAK4r</cm:target>
+        </cm:relation>
+      </cm:relations>
+      <cm:relations cm:id="i8pm8Rn-uiyCvTGPz" cm:class="ps:children">
+        <cm:relation cm:id="izNVs1VY32oAV8jEF" cm:type="ps:optional">
+          <cm:target cm:id="iRX2KvjjsmSW9hofj">./i87lU7b7eX8eeDOKf</cm:target>
+        </cm:relation>
+      </cm:relations>
+      <cm:vname>
+        <cm:mimedesc cm:id="iXY6eQ87Xa3HQSnYi" cm:mimetype="text/plain" cm:encoding="utf-8">index</cm:mimedesc>
+      </cm:vname>
+    </cm:element>
+    <cm:element cm:id="i87lU7b7eX8eeDOKf" cm:type="ps:condxml" cm:class="ps:source" cm:default="on">
+      <cm:relations cm:id="iwqFyNvg2PkdSx6E3" cm:class="ps:dependencies">
+      </cm:relations>
+      <cm:relations cm:id="iT-iQB9OzN4ZBubtE" cm:class="ps:parents">
+        <cm:relation cm:id="ikZauqKUTQaumsuxZ" cm:type="ps:parent">
+          <cm:target cm:id="iWP0IOdEvnj8sD-mz">./ikANZCfrIOSpd7W5l</cm:target>
+        </cm:relation>
+      </cm:relations>
+      <cm:properties>
+        <cm:property cm:id="izzorz2v4br3IYzbT" cm:type="ps:path" cm:fixed="true" cm:name="file">
+          <cm:constant cm:id="iNzJdHdTSqDXwWfJ2" cm:type="ps:path">index.html</cm:constant>
+        </cm:property>
+        <cm:property cm:id="iz2AiW1kGM3kBzzDa" cm:type="ps:filetype" cm:fixed="true" cm:name="type">
+          <cm:constant cm:id="inume1_fnR50tTYms" cm:type="ps:filetype">misc</cm:constant>
+        </cm:property>
+        
+        
+        
+        
+      </cm:properties>
+      <cm:vname>
+        <cm:mimedesc cm:id="ia2a1p2fmg58_SDLO" cm:mimetype="text/plain" cm:encoding="utf-8">index.html</cm:mimedesc>
+      </cm:vname>
+    </cm:element>
+    <cm:element cm:id="i_e8DgvzCe8cVMNyz" cm:type="ps:component" cm:class="ps:component" cm:default="on">
+      <cm:relations cm:id="izUmWgvUTb-o17Wpj" cm:class="ps:dependencies">
+      </cm:relations>
+      <cm:relations cm:id="i7BCuzROLoSBrxMk-" cm:class="ps:parents">
+        <cm:relation cm:id="ie33ntZViPfxpRzsl" cm:type="ps:parent">
+          <cm:target cm:id="iJ1lH3J_ln3o-9Gbw">./iptC2Nq3tKteaAK4r</cm:target>
+        </cm:relation>
+      </cm:relations>
+      <cm:relations cm:id="iP7kU2KngwlLT9Wyh" cm:class="ps:children">
+        <cm:relation cm:id="i5pjvIQpuY9Fyhg_C" cm:type="ps:optional">
+          <cm:target cm:id="ieawH8PZ8QQxNARhT">./ipzj2qIE_0Ggz2mHJ</cm:target>
+          <cm:target cm:id="iJAHX58kKuboDrXe1">./iHU9RbLRlfCwzAxo0</cm:target>
+          <cm:target cm:id="i93E9fOwh9aIG0Mnp">./iFLLjBnnLpIv_JW4M</cm:target>
+          <cm:target cm:id="iQk04nthjSU6GEhTv">./ituqYB2l1uMmN7Aj0</cm:target>
+          <cm:target cm:id="iQI0mWpGUHGChF2R3">./iBMIyFNcg7KGy0qz6</cm:target>
+          <cm:target cm:id="iq_HZYXIQy27amElu">./idjzOeMT8UD5Ll4gG</cm:target>
+          <cm:target cm:id="iyg8_l2ZnG-u3Igav">./iKFJprenzEc00Mkq-</cm:target>
+        </cm:relation>
+      </cm:relations>
+      <cm:properties>
+        <cm:property cm:id="ia5Wc-X0dr9y3JZS0" cm:type="ps:directory" cm:inheritable="true" cm:fixed="true" cm:name="srcdir">
+          <cm:constant cm:id="ijixXjXhj7CUcpRmv" cm:type="ps:directory">./css</cm:constant>
+        </cm:property>
+        <cm:property cm:id="iqNivDzKWzBg9j2b6" cm:type="ps:directory" cm:inheritable="true" cm:fixed="true" cm:name="dir">
+          <cm:constant cm:id="irW_1htLxwvxI4bPw" cm:type="ps:directory">./css</cm:constant>
+        </cm:property>
+        
+        
+        
+        
+      </cm:properties>
+      <cm:vname>
+        <cm:mimedesc cm:id="icwCqqVzrPhqmuDMO" cm:mimetype="text/plain" cm:encoding="utf-8">css</cm:mimedesc>
+      </cm:vname>
+    </cm:element>
+    <cm:element cm:id="ipzj2qIE_0Ggz2mHJ" cm:type="ex:css" cm:class="ps:part" cm:default="on">
+      <cm:relations cm:id="i7j8sdraNylPfQhxE" cm:class="ps:dependencies">
+      </cm:relations>
+      <cm:relations cm:id="iUSBSU2-QVscn_0qy" cm:class="ps:parents">
+        <cm:relation cm:id="ikOLbdFzOZps1E6fx" cm:type="ps:parent">
+          <cm:target cm:id="im4pRZNTa00SVoFuM">./i_e8DgvzCe8cVMNyz</cm:target>
+        </cm:relation>
+      </cm:relations>
+      <cm:relations cm:id="ieKJK8-tnbRu1Ttyd" cm:class="ps:children">
+        <cm:relation cm:id="iOdQ5jwrtJd-7yjrZ" cm:type="ps:optional">
+          <cm:target cm:id="i4dCGzK_ys6hYudkx">./iUBw938yLlkqkAyYY</cm:target>
+        </cm:relation>
+      </cm:relations>
+      <cm:properties>
+        
+        
+        
+        
+      </cm:properties>
+      <cm:vname>
+        <cm:mimedesc cm:id="ieulXlfbuu0teQ8qK" cm:mimetype="text/plain" cm:encoding="utf-8">imports</cm:mimedesc>
+      </cm:vname>
+    </cm:element>
+    <cm:element cm:id="iUBw938yLlkqkAyYY" cm:type="ps:file" cm:class="ps:source" cm:default="on">
+      <cm:relations cm:id="iNpq_Q3sgxLdIm4L8" cm:class="ps:dependencies">
+      </cm:relations>
+      <cm:relations cm:id="iVC_veq2vEjdO6hWp" cm:class="ps:parents">
+        <cm:relation cm:id="iKc-WcQ5F-9XWQSrq" cm:type="ps:parent">
+          <cm:target cm:id="iWChlDsR8P2WjI61e">./ipzj2qIE_0Ggz2mHJ</cm:target>
+        </cm:relation>
+      </cm:relations>
+      <cm:properties>
+        <cm:property cm:id="i0Oi3viXodw4Pv4Pl" cm:type="ps:path" cm:fixed="true" cm:name="file">
+          <cm:constant cm:id="i3akNWZqAsBRrQ805" cm:type="ps:path">imports.css</cm:constant>
+        </cm:property>
+        <cm:property cm:id="ipWT9jCudKxCcIhtm" cm:type="ps:filetype" cm:fixed="true" cm:name="type">
+          <cm:constant cm:id="ikDA-Wb_xWgQxOwzB" cm:type="ps:filetype">misc</cm:constant>
+        </cm:property>
+        
+        
+        
+        
+      </cm:properties>
+      <cm:vname>
+        <cm:mimedesc cm:id="iMZyqKppqlrP0QRwL" cm:mimetype="text/plain" cm:encoding="utf-8">imports.css</cm:mimedesc>
+      </cm:vname>
+    </cm:element>
+    <cm:element cm:id="iHU9RbLRlfCwzAxo0" cm:type="ex:css" cm:class="ps:part" cm:default="on">
+      <cm:relations cm:id="i6FXccPtfRqj6rTt1" cm:class="ps:dependencies">
+      </cm:relations>
+      <cm:relations cm:id="iS-Qks5VwAunNTLn_" cm:class="ps:parents">
+        <cm:relation cm:id="ij_-dI5neIwIU7JjB" cm:type="ps:parent">
+          <cm:target cm:id="iyRFQ80zmxB1mzM-f">./i_e8DgvzCe8cVMNyz</cm:target>
+        </cm:relation>
+      </cm:relations>
+      <cm:relations cm:id="iUINFUsH203vcP4yw" cm:class="ps:children">
+        <cm:relation cm:id="i3kDILxA013TTylHJ" cm:type="ps:optional">
+          <cm:target cm:id="iZYXQxRwcJk4uGsYj">./iAbqgwnsgmLkWeD3t</cm:target>
+        </cm:relation>
+      </cm:relations>
+      <cm:properties>
+        
+        
+        
+        
+      </cm:properties>
+      <cm:vname>
+        <cm:mimedesc cm:id="iSQ9exQvBZq9rGgXa" cm:mimetype="text/plain" cm:encoding="utf-8">main</cm:mimedesc>
+      </cm:vname>
+    </cm:element>
+    <cm:element cm:id="iAbqgwnsgmLkWeD3t" cm:type="ps:file" cm:class="ps:source" cm:default="on">
+      <cm:relations cm:id="irzXN9JuOaAxJfiHP" cm:class="ps:dependencies">
+      </cm:relations>
+      <cm:relations cm:id="iBunKsyV9vyyCkN_2" cm:class="ps:parents">
+        <cm:relation cm:id="iHeA5GRVu5gfC1bQE" cm:type="ps:parent">
+          <cm:target cm:id="i3Ta-hAmG2OUpNMwi">./iHU9RbLRlfCwzAxo0</cm:target>
+        </cm:relation>
+      </cm:relations>
+      <cm:properties>
+        <cm:property cm:id="iQ__ku4GOUoDQU8LO" cm:type="ps:path" cm:fixed="true" cm:name="file">
+          <cm:constant cm:id="iOcn9Boko8t4kPAIb" cm:type="ps:path">main.css</cm:constant>
+        </cm:property>
+        <cm:property cm:id="iwzHkOjQvxpGjZL5B" cm:type="ps:filetype" cm:fixed="true" cm:name="type">
+          <cm:constant cm:id="i5ZFY2yZpHXqfwVtN" cm:type="ps:filetype">misc</cm:constant>
+        </cm:property>
+        
+        
+        
+        
+      </cm:properties>
+      <cm:vname>
+        <cm:mimedesc cm:id="iqC110BaLRxz0GPNh" cm:mimetype="text/plain" cm:encoding="utf-8">main.css</cm:mimedesc>
+      </cm:vname>
+    </cm:element>
+    <cm:element cm:id="iFLLjBnnLpIv_JW4M" cm:type="ex:css" cm:class="ps:part" cm:default="on">
+      <cm:relations cm:id="idWcWwi6SUi2Seipy" cm:class="ps:dependencies">
+      </cm:relations>
+      <cm:relations cm:id="i_7IxhALWnPl2JttW" cm:class="ps:parents">
+        <cm:relation cm:id="iLgj4JgXtiBBZmXuR" cm:type="ps:parent">
+          <cm:target cm:id="iwYs9C-GSF9PTIxNA">./i_e8DgvzCe8cVMNyz</cm:target>
+        </cm:relation>
+      </cm:relations>
+      <cm:relations cm:id="ig3ZOMBRF10j6pTxr" cm:class="ps:children">
+        <cm:relation cm:id="iDDYq05o2zpprohei" cm:type="ps:optional">
+          <cm:target cm:id="ijgybRoJWFhgCYk_E">./iJwKSWvouoHRNJ8mG</cm:target>
+        </cm:relation>
+      </cm:relations>
+      <cm:properties>
+        
+        
+        
+        
+      </cm:properties>
+      <cm:vname>
+        <cm:mimedesc cm:id="iUdv6p1OhMJMfeViM" cm:mimetype="text/plain" cm:encoding="utf-8">pressure</cm:mimedesc>
+      </cm:vname>
+    </cm:element>
+    <cm:element cm:id="iJwKSWvouoHRNJ8mG" cm:type="ps:file" cm:class="ps:source" cm:default="on">
+      <cm:relations cm:id="iWqB37wO-456uZJHS" cm:class="ps:dependencies">
+      </cm:relations>
+      <cm:relations cm:id="itzNawKSI5SpolK2x" cm:class="ps:parents">
+        <cm:relation cm:id="iGAqLNKOgZi5q_wWJ" cm:type="ps:parent">
+          <cm:target cm:id="i6ihXynccWG273lN9">./iFLLjBnnLpIv_JW4M</cm:target>
+        </cm:relation>
+      </cm:relations>
+      <cm:properties>
+        <cm:property cm:id="iVz_LL4k2DhJVev6N" cm:type="ps:path" cm:fixed="true" cm:name="file">
+          <cm:constant cm:id="idaYLX2DDAnWdhgeu" cm:type="ps:path">pressure.css</cm:constant>
+        </cm:property>
+        <cm:property cm:id="iPXjbyVQepLH3a8zK" cm:type="ps:filetype" cm:fixed="true" cm:name="type">
+          <cm:constant cm:id="itTmZeHH62yb-GbpG" cm:type="ps:filetype">misc</cm:constant>
+        </cm:property>
+        
+        
+        
+        
+      </cm:properties>
+      <cm:vname>
+        <cm:mimedesc cm:id="iLIayydv6Q6I6uG_h" cm:mimetype="text/plain" cm:encoding="utf-8">pressure.css</cm:mimedesc>
+      </cm:vname>
+    </cm:element>
+    <cm:element cm:id="ituqYB2l1uMmN7Aj0" cm:type="ex:css" cm:class="ps:part" cm:default="on">
+      <cm:relations cm:id="ix722zXaXMGU8AGWJ" cm:class="ps:dependencies">
+      </cm:relations>
+      <cm:relations cm:id="iEsLcGOV9WL608YRG" cm:class="ps:parents">
+        <cm:relation cm:id="i8CnfvQ-hiZaEkFkL" cm:type="ps:parent">
+          <cm:target cm:id="i5ov56Aov3McS5rgG">./i_e8DgvzCe8cVMNyz</cm:target>
+        </cm:relation>
+      </cm:relations>
+      <cm:relations cm:id="iMgrU5RnaqNWuucjP" cm:class="ps:children">
+        <cm:relation cm:id="iSbcMVICAj1UQNLOV" cm:type="ps:optional">
+          <cm:target cm:id="ifXaJA-M6LCNd-0mB">./itkGcqD-e0WT4oZk4</cm:target>
+        </cm:relation>
+      </cm:relations>
+      <cm:properties>
+        
+        
+        
+        
+      </cm:properties>
+      <cm:vname>
+        <cm:mimedesc cm:id="iDkWUfhutZl11T5YN" cm:mimetype="text/plain" cm:encoding="utf-8">tacho</cm:mimedesc>
+      </cm:vname>
+    </cm:element>
+    <cm:element cm:id="itkGcqD-e0WT4oZk4" cm:type="ps:file" cm:class="ps:source" cm:default="on">
+      <cm:relations cm:id="iF4rpJV8FFodsPL8P" cm:class="ps:dependencies">
+      </cm:relations>
+      <cm:relations cm:id="idehBc_4wZ-EFDsD5" cm:class="ps:parents">
+        <cm:relation cm:id="i39kB-m11vsBrN8Y1" cm:type="ps:parent">
+          <cm:target cm:id="iZ-fqe3efZiH5RBU5">./ituqYB2l1uMmN7Aj0</cm:target>
+        </cm:relation>
+      </cm:relations>
+      <cm:properties>
+        <cm:property cm:id="i0r_I91EE_3ZLgfXW" cm:type="ps:path" cm:fixed="true" cm:name="file">
+          <cm:constant cm:id="ikkkEujKXzyRmPhaD" cm:type="ps:path">tacho.css</cm:constant>
+        </cm:property>
+        <cm:property cm:id="ilP-drBkwrOc84F7D" cm:type="ps:filetype" cm:fixed="true" cm:name="type">
+          <cm:constant cm:id="iCxYP49YmuOFmWwjd" cm:type="ps:filetype">misc</cm:constant>
+        </cm:property>
+        
+        
+        
+        
+      </cm:properties>
+      <cm:vname>
+        <cm:mimedesc cm:id="ipPLN-hZWEoFLPHFn" cm:mimetype="text/plain" cm:encoding="utf-8">tacho.css</cm:mimedesc>
+      </cm:vname>
+    </cm:element>
+    <cm:element cm:id="iBMIyFNcg7KGy0qz6" cm:restriction="i7PzvI3ZcDr_r_aZP" cm:type="ex:css" cm:class="ps:part" cm:default="on">
+      <cm:relations cm:id="iNy4Go93hVctYDZ-k" cm:class="ps:dependencies">
+      </cm:relations>
+      <cm:relations cm:id="iHnO9Kfu1f965Metq" cm:class="ps:parents">
+        <cm:relation cm:id="ie9iHNu0yGRMNwwAB" cm:type="ps:parent">
+          <cm:target cm:id="iQWxs4V4Im_oNuuq9">./i_e8DgvzCe8cVMNyz</cm:target>
+        </cm:relation>
+      </cm:relations>
+      <cm:relations cm:id="ii4oQcEPhDNRsQOqp" cm:class="ps:children">
+        <cm:relation cm:id="iOQJPuKktJQFsAWd-" cm:type="ps:optional">
+          <cm:target cm:id="iH_we7dztiPc629DA">./i3ue6ux8s8UlKA8RV</cm:target>
+        </cm:relation>
+      </cm:relations>
+      <cm:properties>
+        
+        
+        
+        
+      </cm:properties>
+      <cm:vname>
+        <cm:mimedesc cm:id="iG9frK15RI_rBzyXa" cm:mimetype="text/plain" cm:encoding="utf-8">thermometer</cm:mimedesc>
+      </cm:vname>
+    </cm:element>
+    <cm:element cm:id="i3ue6ux8s8UlKA8RV" cm:type="ps:file" cm:class="ps:source" cm:default="on">
+      <cm:relations cm:id="iN424x_5dnwsqAfvW" cm:class="ps:dependencies">
+      </cm:relations>
+      <cm:relations cm:id="icqTDSeEwSbSgv2R7" cm:class="ps:parents">
+        <cm:relation cm:id="ic7_BC1sTu3eMPHFH" cm:type="ps:parent">
+          <cm:target cm:id="iq5rDd03FL4ZRl5C0">./iBMIyFNcg7KGy0qz6</cm:target>
+        </cm:relation>
+      </cm:relations>
+      <cm:properties>
+        <cm:property cm:id="iIXJ4-rjvy80TupBb" cm:type="ps:path" cm:fixed="true" cm:name="file">
+          <cm:constant cm:id="iEqwSRLf8CHj3bfkx" cm:type="ps:path">thermometer.css</cm:constant>
+        </cm:property>
+        <cm:property cm:id="iy-a_Vh5bRz_lH28x" cm:type="ps:filetype" cm:fixed="true" cm:name="type">
+          <cm:constant cm:id="it7xfPxz0ZJc3eHcX" cm:type="ps:filetype">misc</cm:constant>
+        </cm:property>
+        
+        
+        
+        
+      </cm:properties>
+      <cm:vname>
+        <cm:mimedesc cm:id="imO8Bo0K6Yc3Thbyn" cm:mimetype="text/plain" cm:encoding="utf-8">thermometer.css</cm:mimedesc>
+      </cm:vname>
+    </cm:element>
+    <cm:element cm:id="iKFJprenzEc00Mkq-" cm:type="ex:css" cm:class="ps:part" cm:default="on">
+      <cm:relations cm:id="iMNK4jXJQja4a1hoV" cm:class="ps:dependencies">
+      </cm:relations>
+      <cm:relations cm:id="i881phCaIy8q54Yvk" cm:class="ps:parents">
+        <cm:relation cm:id="i8H-zD7GkWljLYj-C" cm:type="ps:parent">
+          <cm:target cm:id="irDYQX72bJiGAbczW">./i_e8DgvzCe8cVMNyz</cm:target>
+        </cm:relation>
+      </cm:relations>
+      <cm:relations cm:id="iucMDTYeLp5t565cD" cm:class="ps:children">
+        <cm:relation cm:id="i7PoDktP94GrG5xLP" cm:type="ps:optional">
+          <cm:target cm:id="iXlwLXZCwBsr2DcFG">./iOrW_0PiNrxz1UVGR</cm:target>
+        </cm:relation>
+      </cm:relations>
+      <cm:properties>
+        
+        
+        
+        
+      </cm:properties>
+      <cm:vname>
+        <cm:mimedesc cm:id="ileeL0jEd9Ue0VeKe" cm:mimetype="text/plain" cm:encoding="utf-8">wind</cm:mimedesc>
+      </cm:vname>
+    </cm:element>
+    <cm:element cm:id="iOrW_0PiNrxz1UVGR" cm:type="ps:file" cm:class="ps:source" cm:default="on">
+      <cm:relations cm:id="ig_VryezuOZelHfFw" cm:class="ps:dependencies">
+      </cm:relations>
+      <cm:relations cm:id="iMYFR7rCfJD0Edk9v" cm:class="ps:parents">
+        <cm:relation cm:id="iw3PuynJxBbnDcn8p" cm:type="ps:parent">
+          <cm:target cm:id="ifJiua3_rL9Ij1SL4">./iKFJprenzEc00Mkq-</cm:target>
+        </cm:relation>
+      </cm:relations>
+      <cm:properties>
+        <cm:property cm:id="iDRnKzTPxsND2AdpC" cm:type="ps:path" cm:fixed="true" cm:name="file">
+          <cm:constant cm:id="iagQhB7k387euvI6P" cm:type="ps:path">wind.css</cm:constant>
+        </cm:property>
+        <cm:property cm:id="ibPQBDgM1bfp81E1Y" cm:type="ps:filetype" cm:fixed="true" cm:name="type">
+          <cm:constant cm:id="i5my1yfBVzmZweR9C" cm:type="ps:filetype">misc</cm:constant>
+        </cm:property>
+        
+        
+        
+        
+      </cm:properties>
+      <cm:vname>
+        <cm:mimedesc cm:id="iVDqndALQQYkiaIys" cm:mimetype="text/plain" cm:encoding="utf-8">wind.css</cm:mimedesc>
+      </cm:vname>
+    </cm:element>
+    <cm:element cm:id="iCFmQUZ77pCQOJtJ3" cm:type="ps:condxml" cm:class="ps:source" cm:default="on">
+      <cm:relations cm:id="iaNeyPkJggzYqfZ6k" cm:class="ps:dependencies">
+      </cm:relations>
+      <cm:relations cm:id="iQRpFfK82zy7stYxI" cm:class="ps:parents">
+        <cm:relation cm:id="iPFqHd1QHXvJwjdnM" cm:type="ps:parent">
+          <cm:target cm:id="iBmDzTZVq2LJhcx9c">./iaamH0N-pIJDyT-zN</cm:target>
+        </cm:relation>
+      </cm:relations>
+      <cm:properties>
+        <cm:property cm:id="i9jMWyWlfIY6VLELj" cm:type="ps:path" cm:fixed="true" cm:name="file">
+          <cm:constant cm:id="ivGX8kP71DmTHwg_v" cm:type="ps:path">Weather Station User Manual.xml</cm:constant>
+        </cm:property>
+        <cm:property cm:id="iH5zvavhUy9APXnHG" cm:type="ps:filetype" cm:fixed="true" cm:name="type">
+          <cm:constant cm:id="i4e5y1LaubKIvUumo" cm:type="ps:filetype">misc</cm:constant>
+        </cm:property>
+        
+        
+        
+        
+      </cm:properties>
+      <cm:vname>
+        <cm:mimedesc cm:id="i4EfPDwMSr4CdrO4I" cm:mimetype="text/plain" cm:encoding="utf-8">Weather Station User Manual.xml</cm:mimedesc>
+      </cm:vname>
+    </cm:element>
+    <cm:element cm:id="idjzOeMT8UD5Ll4gG" cm:restriction="iRp_pphwsIp8uxDF0" cm:type="ex:css" cm:class="ps:part" cm:default="on">
+      <cm:relations cm:id="i--48fGJ_bVdmGOqx" cm:class="ps:dependencies">
+      </cm:relations>
+      <cm:relations cm:id="ilyetVMGVUshNIMDJ" cm:class="ps:parents">
+        <cm:relation cm:id="ip0INsv-xfA8pL6c5" cm:type="ps:parent">
+          <cm:target cm:id="ijPZn-SQqP62YqNgm">./i_e8DgvzCe8cVMNyz</cm:target>
+        </cm:relation>
+      </cm:relations>
+      <cm:relations cm:id="i3q2WcbrWQ6gc5FH3" cm:class="ps:children">
+        <cm:relation cm:id="isdwNPxhns8xqzWVS" cm:type="ps:optional">
+          <cm:target cm:id="i44cXQnD03-8PM0TW">./iGum5rGd-J23OrzDn</cm:target>
+        </cm:relation>
+      </cm:relations>
+      <cm:properties>
+        
+        
+        
+        
+      </cm:properties>
+      <cm:vname>
+        <cm:mimedesc cm:id="inJCEaC9lijentoEL" cm:mimetype="text/plain" cm:encoding="utf-8">thermometer_blue</cm:mimedesc>
+      </cm:vname>
+    </cm:element>
+    <cm:element cm:id="iGum5rGd-J23OrzDn" cm:type="ps:file" cm:class="ps:source" cm:default="on">
+      <cm:relations cm:id="isyiG0GptAD14rMkr" cm:class="ps:dependencies">
+      </cm:relations>
+      <cm:relations cm:id="iS5Z3sTdL5ohZYZam" cm:class="ps:parents">
+        <cm:relation cm:id="iNWentzBgPyFFo5IW" cm:type="ps:parent">
+          <cm:target cm:id="i-C3iFi3voC_FizHy">./idjzOeMT8UD5Ll4gG</cm:target>
+        </cm:relation>
+      </cm:relations>
+      <cm:properties>
+        <cm:property cm:id="ifisOqMRaZQygRgC2" cm:type="ps:path" cm:fixed="true" cm:name="file">
+          <cm:constant cm:id="iizYCqnyKMP8MsFk4" cm:type="ps:path">thermometer.css</cm:constant>
+        </cm:property>
+        <cm:property cm:id="iihljqr3w19BR6CU0" cm:type="ps:filetype" cm:fixed="true" cm:name="type">
+          <cm:constant cm:id="ipVwHEv8bAqJr6mB_" cm:type="ps:filetype">misc</cm:constant>
+        </cm:property>
+        
+        
+        
+        
+        <cm:property cm:id="ir_u3BUytuAQNDSck" cm:type="ps:path" cm:fixed="true" cm:name="srcfile">
+          <cm:constant cm:id="i_TnkUefzLJ3cX2x2" cm:type="ps:path">thermometer_blue.css</cm:constant>
+        </cm:property>
+      </cm:properties>
+      <cm:vname>
+        <cm:mimedesc cm:id="iA4JMwLhmZIGp733J" cm:mimetype="text/plain" cm:encoding="utf-8">thermometer_blue.css</cm:mimedesc>
+      </cm:vname>
+    </cm:element>
+  </cm:elements>
+</cm:consulmodel>

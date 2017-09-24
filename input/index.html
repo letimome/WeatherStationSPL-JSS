@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" dir="ltr">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<link rel="stylesheet" type="text/css" href="css/main.css" />
+	<link rel="shortcut icon" href="images/favicon.ico" type="image/ico" />
+	<script src="js/settings.js" type="text/javascript"></script>
+	<script src="js/scale.js" type="text/javascript"></script>
+	<script src="js/sensors.js" type="text/javascript"></script>
+	<title>Weather Station - pure-systems GmbH</title>
+</head>
+<body onload="initLayout();">
+	<div id="border">
+		<h1 id="main_title"> &nbsp; </h1>
+		<div id="framework">
+	
+			<div class="display pressure" condition="pv:hasFeature('AirPressure')">
+				<div id="pressure">
+					<h2 id="pres_title"> &nbsp; </h2>
+					<div id="p_main" class="tacho">
+						<div id="p_pic">
+							<div class="background">
+								<div id="p_point" style="background: url('images/n_9.png');"></div>
+							</div>
+						</div>
+						<div class="unit"> &nbsp; </div>
+						<div class="number text_0"> &nbsp; </div>
+						<div class="number text_2"> &nbsp; </div>
+						<div class="number text_4"> &nbsp; </div>
+						<div class="number text_9"> &nbsp; </div>
+						<div class="number text_11"> &nbsp; </div>
+						<div class="number text_13"> &nbsp; </div>
+					</div>
+					<form action="" method="post" enctype="text/plain" onsubmit="return applyPressure();">
+						<div>
+							Sensor:<br />
+							<input id="p_measure" type="text" name="" value="" size="40" maxlength="40"/>
+							<input type="submit" name="" value="OK"/>
+						</div>
+					</form>
+				</div>
+			</div>
+	
+			<div class="display thermometer" condition="pv:hasFeature('Temperature')">
+				<div id="thermometer">
+					<h2 id="temp_title"> &nbsp; </h2>
+					<div id="t_main">
+						<div id="t_upper">
+							<div id="t_upper_red"><div id="t_upper_white"><div id="t_point" style="height: 100px;"></div></div></div>
+						</div>
+						<div id="t_scale">
+							<div class="unit"> &nbsp; </div>
+							
+							<div class="number text_5"> &nbsp; </div>
+							<div class="number text_4"> &nbsp; </div>
+							<div class="number text_3"> &nbsp; </div>
+			
+							<div class="number text_2"> &nbsp; </div>
+							<div class="number text_1"> &nbsp; </div>
+							
+							<div class="number text_0"> &nbsp; </div>
+						</div>
+						<div id="t_lower"></div>
+					</div>
+					<form action="./index.html" method="post" enctype="text/plain" onsubmit="return applyTemperature();">
+						<div>
+							Sensor:<br />
+							<input id="t_measure" type="text" name="T_Sensor" value="" size="10" maxlength="10"/>
+							<input type="submit" value="OK"/>
+						</div>
+					</form>
+				</div>
+			</div>
+	
+			<div class="display wind" condition="pv:hasFeature('WindSpeed')">
+				<div id="wind">
+					<h2 id="wind_title"> &nbsp; </h2>
+					<div id="w_main" class="tacho">
+						<div id="w_pic">
+							<div class="background">
+								<div id="w_point" style="background: url('images/n_6.png');"></div>
+							</div>
+						</div>
+						<div class="unit"> &nbsp; </div>
+						<div class="number text_0"> &nbsp; </div>
+						<div class="number text_2"> &nbsp; </div>
+						<div class="number text_4"> &nbsp; </div>
+						<div class="number text_9"> &nbsp; </div>
+						<div class="number text_11"> &nbsp; </div>
+						<div class="number text_13"> &nbsp; </div>
+					</div>
+					<form action="" method="post" enctype="text/plain" onsubmit="return applyWindSpeed();">
+						<div>
+							Sensor:<br />
+							<input id="w_measure" type="text" name="" value="" size="40" maxlength="40"/>
+							<input type="submit" name="" value="OK"/>
+						</div>
+					</form>
+				</div>
+			</div>
+	
+			<br class="clr" />
+			
+			<div id="warning">
+				
+			</div>
+		</div>
+	</div>
+</body>
+</html>

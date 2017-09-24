@@ -1,0 +1,57 @@
+.tacho .background {
+	background: url("../images/tacho.png") bottom right no-repeat;
+}
+
+.tacho .number {
+	white-space: nowrap;
+	overflow: visible;
+	width: 55px;
+}
+
+.tacho .text_0 {
+	position: absolute;
+	right: 310px;
+	bottom: 50px;
+	text-align: right;
+}
+
+.tacho .text_2 {
+	position: absolute;
+	right: 345px;
+	bottom: 150px;
+	text-align: right;
+}
+
+.tacho .text_4 {
+	position: absolute;
+	right: 310px;
+	bottom: 250px;
+	text-align: right;
+}
+
+.tacho .text_9 {
+	position: absolute;
+	left: 310px;
+	bottom: 250px;
+	text-align: left;
+}
+
+.tacho .text_11 {
+	position: absolute;
+	left: 345px;
+	bottom: 150px;
+	text-align: left;
+}
+
+.tacho .text_13 {
+	position: absolute;
+	left: 310px;
+	bottom: 50px;
+	text-align: left;
+}
+
+.tacho .unit {
+	position: relative;
+	bottom: 104px;
+}
+

@@ -1,0 +1,48 @@
+@import "imports.css";
+
+body {
+	width: 100%;
+	background-color: #ccc;
+	font-family: Verdana,sans-serif;
+	margin: 0px;
+}
+
+#border {
+	margin: 0px;
+	padding: 20px 0px;
+	background-color: #ccc;
+}
+
+#framework {
+	background-color: #ccc;
+	margin: 0px auto;
+	width: 1007px;
+	text-align: center;
+}
+
+h1 {
+	text-align: center;
+}
+
+h2 {
+	text-align: center;
+	margin: 0px;
+	margin-bottom: 40px;
+}
+
+.display {
+	float: left;
+	background-color: #808080;
+	margin: 1px;
+	padding: 20px 0px;
+}
+
+.clr {
+	clear: both;
+}
+
+#warning {
+	color: #ef2102;
+	margin-top: 30px;
+	font-size: 1.5em;
+}

@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cm:consulmodel xmlns:cm="http://www.pure-systems.com/consul/model" cm:id="iZDYEoOJvFKXojv_z" cm:version="1.5" cm:type="ps:fm">
+  <cm:head>
+    <cm:properties>
+      <cm:property cm:id="iWHFXMuJOQNIcqohv" cm:type="ps:string" cm:invisible="true" cm:name="ps:version">
+        <cm:constant cm:id="iEXpJbdlxZuo8vJnm" cm:type="ps:string">1.0</cm:constant>
+      </cm:property>
+      <cm:property cm:id="iZeUDKnWl61Hb3RcD" cm:type="ps:string" cm:invisible="true" cm:name="ps:name">
+        <cm:constant cm:id="i8300ZwZ7d4B0Gofe" cm:type="ps:string">WeatherStationFeatures</cm:constant>
+      </cm:property>
+      <cm:property cm:id="ihhBCBOCOwkKX3QLI" cm:type="ps:string" cm:invisible="true" cm:name="ps:author">
+        <cm:constant cm:id="iP8RpyfzyJt-UlJce" cm:type="ps:string">danilo</cm:constant>
+      </cm:property>
+      <cm:property cm:id="iKI0M7erlgt_Lw7l8" cm:type="ps:date" cm:invisible="true" cm:name="ps:created">
+        <cm:constant cm:id="ij72wjjF2UbEIsesK" cm:type="ps:date">2009-11-20T15:20:30Z</cm:constant>
+      </cm:property>
+      <cm:property cm:id="iJK57KyxHpK1Z9cXz" cm:type="ps:bug" cm:inheritable="true" cm:fixed="true" cm:name="mks:IssueTracker">
+        <cm:constant cm:id="iAWq8T_J-Tq2xKBLy" cm:type="ps:bug">http://192.168.47.130:7001/</cm:constant>
+      </cm:property>
+    </cm:properties>
+  </cm:head>
+  <cm:elements cm:rootid="ijpwZFIlDeuk-F88n">
+    <cm:element cm:id="ijpwZFIlDeuk-F88n" cm:name="WeatherStation" cm:type="ps:feature" cm:class="ps:feature" cm:default="on">
+      <cm:relations cm:id="iUct7FAVX7wBrjFtL" cm:class="ps:dependencies">
+      </cm:relations>
+      <cm:relations cm:id="i0BMoR8b27u8eJPh1" cm:class="ps:children">
+        <cm:relation cm:id="i6o_cW77tHelSuxXZ" cm:type="ps:mandatory">
+          <cm:target cm:id="ipf7OM2eKL8BNa9v5">./i3o2RSj4Fg7d7nNlj</cm:target>
+          <cm:target cm:id="ifNl8acuPP1N84IdM">./ir48hEVg8Y2CeMjeO</cm:target>
+        </cm:relation>
+        <cm:relation cm:id="idVuxQJyQALq6kJxN" cm:type="ps:optional">
+          <cm:target cm:id="iEhEYa5gwqdMQD8Nw">./iBFyOWLYHFpADbYjX</cm:target>
+        </cm:relation>
+      </cm:relations>
+      <cm:properties>
+        
+        
+        
+        
+      </cm:properties>
+      <cm:vname>
+        <cm:mimedesc cm:id="i7Prw9uTUynC6lr78" cm:mimetype="text/plain" cm:encoding="utf-8">Weather Station</cm:mimedesc>
+        <cm:mimedesc cm:id="i1f4VGBG85s5_mDVx" cm:mimetype="text/plain" cm:lang="de" cm:encoding="utf-8">Wetterstation</cm:mimedesc>
+        <cm:mimedesc cm:id="ixvEUamQFidyNj4lZ" cm:mimetype="text/plain" cm:lang="zh" cm:encoding="utf-8">氣象站</cm:mimedesc>
+      </cm:vname>
+    </cm:element>
+    <cm:element cm:id="ii8D0Gk3FIhXMVm1w" cm:name="English" cm:type="ps:feature" cm:class="ps:feature" cm:default="off">
+      <cm:relations cm:id="iJq93NMUfIGX89Zx8" cm:class="ps:dependencies">
+      </cm:relations>
+      <cm:relations cm:id="ihpUugU36P4j2pQ_L" cm:class="ps:parents">
+        <cm:relation cm:id="iZQtuXLtEYj05g90B" cm:type="ps:parent">
+          <cm:target cm:id="izpohVVXois1Ap-vi">./ir48hEVg8Y2CeMjeO</cm:target>
+        </cm:relation>
+      </cm:relations>
+      <cm:properties>
+        
+        
+        
+        
+      </cm:properties>
+      <cm:vname>
+        <cm:mimedesc cm:id="imsMJ7fYqk2w3JsMd" cm:mimetype="text/plain" cm:lang="de" cm:encoding="utf-8">Englisch</cm:mimedesc>
+        <cm:mimedesc cm:id="iYKLsgq6HmfoMUwOe" cm:mimetype="text/plain" cm:encoding="utf-8">English</cm:mimedesc>
+        <cm:mimedesc cm:id="irKPjPk6_t_2r4HEr" cm:mimetype="text/plain" cm:lang="zh" cm:encoding="utf-8">英</cm:mimedesc>
+      </cm:vname>
+    </cm:element>
+    <cm:element cm:id="iypo4fjbnzCe3-d-j" cm:name="Gale" cm:type="ps:feature" cm:class="ps:feature" cm:default="off">
+      <cm:relations cm:id="i1JzoTZqgvrdrtJvn" cm:class="ps:dependencies">
+        <cm:relation cm:id="iWW37-gm6yp3Hfxio" cm:type="ps:requires">
+          <cm:target cm:id="iAn20nsT3nGXNiop-">./iiB5wK-h-iipDy4tU</cm:target>
+        </cm:relation>
+      </cm:relations>
+      <cm:relations cm:id="iTkL-LM1G66pw6xOz" cm:class="ps:parents">
+        <cm:relation cm:id="iS9ZN98iUG8gRog36" cm:type="ps:parent">
+          <cm:target cm:id="izXURZuUTIiuXOYWu">./iBFyOWLYHFpADbYjX</cm:target>
+        </cm:relation>
+      </cm:relations>
+      <cm:properties>
+        
+        
+        
+        
+      </cm:properties>
+      <cm:vname>
+        <cm:mimedesc cm:id="iEbFTNJNev65_lpoh" cm:mimetype="text/plain" cm:encoding="utf-8">Gale / Strong Wind</cm:mimedesc>
+        <cm:mimedesc cm:id="iD7DyxnORH6QCYe8W" cm:mimetype="text/plain" cm:lang="de" cm:encoding="utf-8">Sturm / Starker Wind</cm:mimedesc>
+        <cm:mimedesc cm:id="ieUNGcCl7dQVxoHtc" cm:mimetype="text/plain" cm:lang="zh" cm:encoding="utf-8">烈風 / 強風</cm:mimedesc>
+      </cm:vname>
+    </cm:element>
+    <cm:element cm:id="ilpiLoRjAhseJSQP4" cm:name="German" cm:type="ps:feature" cm:class="ps:feature" cm:default="off">
+      <cm:relations cm:id="ib6qOUWrqZOE4mFzU" cm:class="ps:dependencies">
+      </cm:relations>
+      <cm:relations cm:id="ihK3DDnxcLXLuk3Y2" cm:class="ps:parents">
+        <cm:relation cm:id="ivBwL_BhuKMcySQ3J" cm:type="ps:parent">
+          <cm:target cm:id="iKby1YUodb-G5xrKm">./ir48hEVg8Y2CeMjeO</cm:target>
+        </cm:relation>
+      </cm:relations>
+      <cm:properties>
+        
+        
+        
+        
+      </cm:properties>
+      <cm:vname>
+        <cm:mimedesc cm:id="itxmDPlpP1l4Ed8wA" cm:mimetype="text/plain" cm:lang="de" cm:encoding="utf-8">Deutsch</cm:mimedesc>
+        <cm:mimedesc cm:id="i0Yo-wdFvQgQOeTvT" cm:mimetype="text/plain" cm:encoding="utf-8">German</cm:mimedesc>
+        <cm:mimedesc cm:id="igimqjwj4MufVQLIt" cm:mimetype="text/plain" cm:lang="zh" cm:encoding="utf-8">德國</cm:mimedesc>
+      </cm:vname>
+    </cm:element>
+    <cm:element cm:id="iwG8HrEyXal5SlgdL" cm:name="Heat" cm:type="ps:feature" cm:class="ps:feature" cm:default="off">
+      <cm:relations cm:id="ig8kIDoVxPhWnCVw-" cm:class="ps:dependencies">
+        <cm:relation cm:id="iSpPKvqkuIap_2_Wq" cm:type="ps:requires">
+          <cm:target cm:id="ipIOc6WRlEYo6wFI_">iZDYEoOJvFKXojv_z/iI3TBWouTV2fskyik</cm:target>
+        </cm:relation>
+      </cm:relations>
+      <cm:relations cm:id="iW769iUXoh-xvlnBf" cm:class="ps:parents">
+        <cm:relation cm:id="iprCIKhSb2A0HzFC6" cm:type="ps:parent">
+          <cm:target cm:id="iVovKhF6CFP31Se0V">./iBFyOWLYHFpADbYjX</cm:target>
+        </cm:relation>
+      </cm:relations>
+      <cm:properties>
+        
+        
+        
+        
+      </cm:properties>
+      <cm:vname>
+        <cm:mimedesc cm:id="i7vbjiLd0L9d4rxod" cm:mimetype="text/plain" cm:lang="de" cm:encoding="utf-8">Wärme</cm:mimedesc>
+        <cm:mimedesc cm:id="iHIxcWeUsE8PgRK-B" cm:mimetype="text/plain" cm:encoding="utf-8">Heat</cm:mimedesc>
+        <cm:mimedesc cm:id="ivxnHXAvxoVoYAqm5" cm:mimetype="text/plain" cm:lang="zh" cm:encoding="utf-8">熱量</cm:mimedesc>
+      </cm:vname>
+    </cm:element>
+    <cm:element cm:id="iI3TBWouTV2fskyik" cm:name="Temperature" cm:type="ps:feature" cm:class="ps:feature" cm:default="off">
+      <cm:relations cm:id="ibRjCZn4sNIJwikFW" cm:class="ps:dependencies">
+      </cm:relations>
+      <cm:relations cm:id="iRPCG8MYgnt7q7Izg" cm:class="ps:parents">
+        <cm:relation cm:id="iCiTxu-06iwhs5SWm" cm:type="ps:parent">
+          <cm:target cm:id="ipEntHNEfRRUFEXtl">./i3o2RSj4Fg7d7nNlj</cm:target>
+        </cm:relation>
+      </cm:relations>
+      <cm:relations cm:id="iifpPeprc0v5RqpAT" cm:class="ps:children">
+        <cm:relation cm:id="iA4lImVBIIvIPtCIP" cm:type="ps:optional" cm:range="[0,n]">
+          <cm:target cm:id="i4o0XIm1Z5KCm9eNx">./iM8DxJVrjLJU0xkUM</cm:target>
+        </cm:relation>
+      </cm:relations>
+      <cm:properties>
+        
+        
+        
+        
+        <cm:property cm:id="iyEiEevX1mqjKK4Ln" cm:type="ps:integer" cm:name="max">
+          <cm:constant cm:id="iD31AzT2GENrMNHZr" cm:type="ps:integer">60</cm:constant>
+        </cm:property>
+        <cm:property cm:id="i9UhBW3FFVBiTXpHz" cm:type="ps:integer" cm:name="warn">
+          <cm:constant cm:id="iH6UwPvEDjUnzHHuk" cm:type="ps:integer">45</cm:constant>
+        </cm:property>
+      </cm:properties>
+      <cm:vname>
+        <cm:mimedesc cm:id="ikoNhrrTIUbTo0FOb" cm:mimetype="text/plain" cm:lang="de" cm:encoding="utf-8">Temperatur</cm:mimedesc>
+        <cm:mimedesc cm:id="ieD7eeRBWGFR08jgH" cm:mimetype="text/plain" cm:encoding="utf-8">Temperature</cm:mimedesc>
+        <cm:mimedesc cm:id="i8sIHBkhbWkY7GS62" cm:mimetype="text/plain" cm:lang="zh" cm:encoding="utf-8">溫度</cm:mimedesc>
+      </cm:vname>
+    </cm:element>
+    <cm:element cm:id="iiB5wK-h-iipDy4tU" cm:name="WindSpeed" cm:type="ps:feature" cm:class="ps:feature" cm:default="off">
+      <cm:relations cm:id="i8P0fSsnFag0_li4u" cm:class="ps:dependencies">
+      </cm:relations>
+      <cm:relations cm:id="iO40dkh-OaSCZ421I" cm:class="ps:parents">
+        <cm:relation cm:id="iYiQwjmbjfWiVXBHB" cm:type="ps:parent">
+          <cm:target cm:id="irlOd__5QTnNNhdAv">./i3o2RSj4Fg7d7nNlj</cm:target>
+        </cm:relation>
+      </cm:relations>
+      <cm:properties>
+        
+        
+        
+        
+      </cm:properties>
+      <cm:vname>
+        <cm:mimedesc cm:id="iNaEVHPpRSnCvL5NI" cm:mimetype="text/plain" cm:lang="de" cm:encoding="utf-8">Windgeschwindigkeit</cm:mimedesc>
+        <cm:mimedesc cm:id="iHWi1wrCb1MsyFaO5" cm:mimetype="text/plain" cm:encoding="utf-8">Wind Speed</cm:mimedesc>
+        <cm:mimedesc cm:id="iZfE6DZK_gkSqTdhp" cm:mimetype="text/plain" cm:lang="zh" cm:encoding="utf-8">風速</cm:mimedesc>
+      </cm:vname>
+    </cm:element>
+    <cm:element cm:id="iBFyOWLYHFpADbYjX" cm:name="Warnings" cm:type="ps:feature" cm:class="ps:feature" cm:default="off">
+      <cm:relations cm:id="ik1Ts9q-qzD6vDWrM" cm:class="ps:parents">
+        <cm:relation cm:id="i40l58FmbCp2sRQsR" cm:type="ps:parent">
+          <cm:target cm:id="i25aP7ymg_ItPo9bk">./ijpwZFIlDeuk-F88n</cm:target>
+        </cm:relation>
+      </cm:relations>
+      <cm:relations cm:id="iSfXGEVzH84zRHTkE" cm:class="ps:children">
+        <cm:relation cm:id="iVahZXQn0wiD8UaYy" cm:type="ps:or">
+          <cm:target cm:id="ikXLLHgN9H57lNZbX">./iypo4fjbnzCe3-d-j</cm:target>
+          <cm:target cm:id="iP6uA8pDxUM5eb100">./iwG8HrEyXal5SlgdL</cm:target>
+        </cm:relation>
+      </cm:relations>
+      <cm:properties>
+        
+        
+        
+        
+      </cm:properties>
+      <cm:vname>
+        <cm:mimedesc cm:id="iHKHrEIoXrAcR4ZEU" cm:mimetype="text/plain" cm:lang="de" cm:encoding="utf-8">Warnungen</cm:mimedesc>
+        <cm:mimedesc cm:id="iOZHYRGxXpyRB40We" cm:mimetype="text/plain" cm:encoding="utf-8">Warnings</cm:mimedesc>
+        <cm:mimedesc cm:id="iGf2hR_B-451wsygG" cm:mimetype="text/plain" cm:lang="zh" cm:encoding="utf-8">警告</cm:mimedesc>
+      </cm:vname>
+    </cm:element>
+    <cm:element cm:id="i3o2RSj4Fg7d7nNlj" cm:name="Sensors" cm:type="ps:feature" cm:class="ps:feature" cm:default="on">
+      <cm:relations cm:id="iv7-E2J5QHHyMbsWH" cm:class="ps:parents">
+        <cm:relation cm:id="iJmZCR5PWumwngsu1" cm:type="ps:parent">
+          <cm:target cm:id="i3obcF0ZbKDVEp8OV">./ijpwZFIlDeuk-F88n</cm:target>
+        </cm:relation>
+      </cm:relations>
+      <cm:relations cm:id="iBLiTjmkBj0Sq7gjH" cm:class="ps:children">
+        <cm:relation cm:id="i3Kb3awLvOXTnizu3" cm:type="ps:or" cm:range="[1,n]">
+          <cm:target cm:id="iZ7XaUfskMX96gLsN">./iI3TBWouTV2fskyik</cm:target>
+          <cm:target cm:id="iR_SUhNUsw9szH4ny">./iiB5wK-h-iipDy4tU</cm:target>
+          <cm:target cm:id="iE0jxNQg6nWFRQiKC">./iFIt10gOEo9ATa8dr</cm:target>
+        </cm:relation>
+      </cm:relations>
+      <cm:properties>
+        
+        
+        
+        
+      </cm:properties>
+      <cm:vname>
+        <cm:mimedesc cm:id="iX8lAzIG6w74gctlZ" cm:mimetype="text/plain" cm:lang="de" cm:encoding="utf-8">Sensoren</cm:mimedesc>
+        <cm:mimedesc cm:id="iv63ZAbiv4NxJNSa2" cm:mimetype="text/plain" cm:encoding="utf-8">Sensors</cm:mimedesc>
+        <cm:mimedesc cm:id="io0wGZKoJVjaS3Nc-" cm:mimetype="text/plain" cm:lang="zh" cm:encoding="utf-8">傳感器</cm:mimedesc>
+      </cm:vname>
+    </cm:element>
+    <cm:element cm:id="ir48hEVg8Y2CeMjeO" cm:name="Languages" cm:type="ps:feature" cm:class="ps:feature" cm:default="on">
+      <cm:relations cm:id="iK6nacskSmm9_-LRX" cm:class="ps:parents">
+        <cm:relation cm:id="i0EU4Fm0Oj75HrV1O" cm:type="ps:parent">
+          <cm:target cm:id="iQSE7N64i_io47WKY">./ijpwZFIlDeuk-F88n</cm:target>
+        </cm:relation>
+      </cm:relations>
+      <cm:relations cm:id="i4qrqb1fvNO-J3H6C" cm:class="ps:children">
+        <cm:relation cm:id="iwp_T3MMzykeawDXy" cm:type="ps:alternative">
+          <cm:target cm:id="i0i0g4kG0cF9XGDre">./ii8D0Gk3FIhXMVm1w</cm:target>
+          <cm:target cm:id="ixT59pXDjMq5jcpMX">./ilpiLoRjAhseJSQP4</cm:target>
+        </cm:relation>
+      </cm:relations>
+      <cm:properties>
+        
+        
+        
+        
+      </cm:properties>
+      <cm:vname>
+        <cm:mimedesc cm:id="iyHsia9gH6QrsS0cs" cm:mimetype="text/plain" cm:lang="de" cm:encoding="utf-8">Sprachen</cm:mimedesc>
+        <cm:mimedesc cm:id="i4AP59yT3bb55XKkP" cm:mimetype="text/plain" cm:encoding="utf-8">Languages</cm:mimedesc>
+        <cm:mimedesc cm:id="i6UPdO_YMrEFNJe07" cm:mimetype="text/plain" cm:lang="zh" cm:encoding="utf-8">語言</cm:mimedesc>
+      </cm:vname>
+    </cm:element>
+    <cm:element cm:id="iFIt10gOEo9ATa8dr" cm:name="AirPressure" cm:type="ps:feature" cm:class="ps:feature" cm:default="off">
+      <cm:relations cm:id="iYYhd1J0UsCcp04cL" cm:class="ps:parents">
+        <cm:relation cm:id="iolTrozZzvdbC-p4e" cm:type="ps:parent">
+          <cm:target cm:id="iCKI32v-w2GjgjsR4">./i3o2RSj4Fg7d7nNlj</cm:target>
+        </cm:relation>
+      </cm:relations>
+      <cm:properties>
+        
+        
+        
+        
+      </cm:properties>
+      <cm:vname>
+        <cm:mimedesc cm:id="iUnhcD5s41lHNfARD" cm:mimetype="text/plain" cm:lang="de" cm:encoding="utf-8">Luftdruck</cm:mimedesc>
+        <cm:mimedesc cm:id="iQrkt0WT1TxMB30pA" cm:mimetype="text/plain" cm:encoding="utf-8">Air Pressure</cm:mimedesc>
+        <cm:mimedesc cm:id="iY4sxGvO5nID_EXOz" cm:mimetype="text/plain" cm:lang="zh" cm:encoding="utf-8">空氣壓力</cm:mimedesc>
+      </cm:vname>
+    </cm:element>
+    <cm:element cm:id="iM8DxJVrjLJU0xkUM" cm:name="Color" cm:type="ps:feature" cm:class="ps:feature">
+      <cm:relations cm:id="iB9O7gg2pLIYE8QgX" cm:class="ps:parents">
+        <cm:relation cm:id="idZtyONDJtbR4s-_r" cm:type="ps:parent">
+          <cm:target cm:id="i-FaXM9S_wlqRQPWf">./iI3TBWouTV2fskyik</cm:target>
+        </cm:relation>
+      </cm:relations>
+      <cm:properties>
+        
+        
+        
+        
+      </cm:properties>
+    </cm:element>
+  </cm:elements>
+</cm:consulmodel>
