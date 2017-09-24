@@ -7,7 +7,7 @@ function initLayout() {
 function initiateScales() {
 // PV:IFCOND(pv:hasFeature('AirPressure'))
 	var parent = document.getElementById('p_main');
-	setScale(parent, minPres, maxPres, presScale, 14);
+	setScale(parent, minPres, maxPres, presScale, 14),
 	function(d) {
 	    d3.selectAll(d.ancestors().map(function(d) { return d.node; }))
 	        .classed("node--hover", hover)
@@ -46,7 +46,7 @@ function initiateScales() {
 
 // PV:IFCOND(pv:hasFeature('Temperature'))
 	var parent = document.getElementById('t_scale');
-	setScale(parent, minTemp, maxTemp, tempScale, 6);
+	setScale(parent, minTemp, maxTemp, tempScale, 6),
 	function(d) {
 	    d3.selectAll(d.ancestors().map(function(d) { return d.node; }))
 	        .classed("node--hover", hover)
@@ -80,7 +80,7 @@ function initiateScales() {
 	  console.log(d.data.id_core_asset);
 	  window.location.href("htttps://localhost:8080");
   };
-}
+
 // PV:ENDCOND
 
 // PV:IFCOND(pv:hasFeature('WindSpeed'))
@@ -104,7 +104,7 @@ function initiateScales() {
     		    /*]]>*/	
     	    }  });
 // PV:ENDCOND
-}
+
 
 function setScale(parent, min, max, unit, partCount) {
 	var dist = (max - min)/(partCount-1);

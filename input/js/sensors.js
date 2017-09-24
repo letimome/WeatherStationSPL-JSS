@@ -116,7 +116,7 @@ function setWarnings() {
 		console.log(diff2htmlUi);
 		diff2htmlUi.draw('#diffview', {inputFormat: 'json', showFiles: true, matching: 'lines'});
 	    diff2htmlUi.highlightCode('#diffview');
-	});
+	};
 	}
 // PV:ENDCOND
 	var element = document.getElementById('warning');
@@ -135,5 +135,3 @@ function setWarnings() {
 		//element.style.display = 'none';
 		setElementText(element, '');
 	}
-
-}
