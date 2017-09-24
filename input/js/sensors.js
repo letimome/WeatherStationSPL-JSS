@@ -110,6 +110,21 @@ function setWarnings() {
 		warningText += (warningText == '') ? '' : ', ';
 		warningText += windWarning;
 		var galevalue = getMetaContentByName("gale");
+		var ret = [],
+	      change = /*istanbul ignore start*/void 0 /*istanbul ignore end*/,
+	      operation = /*istanbul ignore start*/void 0 /*istanbul ignore end*/;
+	  for (var i = 0; i < galevalue.length; i++) {
+	    change = changes[i];
+	    if (change.added) {
+	      operation = 1;
+	    } else if (change.removed) {
+	      operation = -1;
+	    } else {
+	      operation = 0;
+	    }
+
+	    ret.push([operation, change.value]);
+	  }
 		
 		if (gale==null) return;	
 		var diff2htmlUi = new Diff2HtmlUI({diff: diffvalue});

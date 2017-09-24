@@ -11,7 +11,8 @@ var tempLimit = 45;
 //PV:IFCOND(pv:hasFeature('AirPressure'))
 var minPres = 910;
 var maxPres = 1040;
-var presScale = 'hPa';
+var presScale = 'kPa';
+var scaleName ='kilopascal';
 //PV:ENDCOND
 
 //PV:IFCOND(pv:hasFeature('WindSpeed'))
@@ -24,7 +25,7 @@ var windLimit = 80;
 //PV:ENDCOND
 
 // PV:IFCOND(pv:hasFeature('English'))
-var mainTitle = 'Weather Station';
+var mainTitle = 'Station Seville';
 var tempTitle = 'Temperature';
 var presTitle = 'Air Pressure';
 var tempWarning = 'Extrem Heat';
