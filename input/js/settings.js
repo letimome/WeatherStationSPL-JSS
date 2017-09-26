@@ -25,7 +25,7 @@ var windLimit = 80;
 //PV:ENDCOND
 
 // PV:IFCOND(pv:hasFeature('English'))
-var mainTitle = 'Station Seville';
+var mainTitle = 'Station ';
 var tempTitle = 'Temperature';
 var presTitle = 'Air Pressure';
 var tempWarning = 'Extrem Heat';
