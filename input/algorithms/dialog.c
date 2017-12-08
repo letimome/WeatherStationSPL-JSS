@@ -208,6 +208,13 @@ int GetSelectionText(HWND hWnd, LPTSTR lpString, int nMaxCount)
     }
 
     dwSize = GetWindowText(hWnd, lpTemp, dwSize);
+     if (Globals.szFileTitle[0] != 0)
+        StringCchCopy(szFilename, ARRAY_SIZE(szFilename), Globals.szFileTitle);
+    else
+        LoadString(Globals.hInstance, STRING_UNTITLED, szFilename, ARRAY_SIZE(szFilename));
+
+    /* When a file is being opened or created, there is no need to have the edited flag shown
+       when the new or opened file has not been edited yet */
 //PV:IFCOND
     if (!dwSize)
     {

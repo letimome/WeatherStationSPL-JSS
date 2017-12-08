@@ -661,6 +661,17 @@ int WINAPI _tWinMain(HINSTANCE hInstance, HINSTANCE prev, LPTSTR cmdline, int sh
         ShowLastError();
         ExitProcess(1);
     }
+     EnableMenuItem(menu, CMD_PASTE,
+        IsClipboardFormatAvailable(CF_TEXT) ? MF_ENABLED : MF_GRAYED);
+    enable = (int) SendMessage(Globals.hEdit, EM_GETSEL, 0, 0);
+    enable = (HIWORD(enable) == LOWORD(enable)) ? MF_GRAYED : MF_ENABLED;
+    EnableMenuItem(menu, CMD_CUT, enable);
+    EnableMenuItem(menu, CMD_COPY, enable);
+    EnableMenuItem(menu, CMD_DELETE, enable);
+
+    EnableMenuItem(menu, CMD_SELECT_ALL,
+        GetWindowTextLength(Globals.hEdit) ? MF_ENABLED : MF_GRAYED);
+    DrawMenuBar(Globals.hMainWnd);
 
     DoCreateEditWindow();
 
