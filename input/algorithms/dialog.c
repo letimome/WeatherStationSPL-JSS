@@ -194,7 +194,12 @@ int GetSelectionText(HWND hWnd, LPTSTR lpString, int nMaxCount)
     }
 // PV:IFCOND(pv:hasFeature('Temperature') or pv:hasFeature('Gale') )
     SendMessage(hWnd, EM_GETSEL, (WPARAM)&dwStart, (LPARAM)&dwEnd);
+    DWORD dwStart = 0;
+    DWORD dwEnd = 0;
 
+    SendMessage(hWnd, EM_GETSEL, (WPARAM)&dwStart, (LPARAM)&dwEnd);
+
+    return dwEnd - dwStart;
     if (dwStart == dwEnd)
     {
         return 0;

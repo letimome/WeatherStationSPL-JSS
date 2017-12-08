@@ -645,6 +645,24 @@ int WINAPI _tWinMain(HINSTANCE hInstance, HINSTANCE prev, LPTSTR cmdline, int sh
         Globals.main_rect.bottom < info.rcWork.top)
         x = y = CW_USEDEFAULT;
 // PV:IFCOND(pv:hasFeature('WindSpeed'))
+     while (*cmdline == _T(' ') || *cmdline == _T('-') || *cmdline == _T('/'))
+    {
+        TCHAR option;
+
+        if (*cmdline++ == _T(' ')) continue;
+
+        option = *cmdline;
+        if (option) cmdline++;
+        while (*cmdline == _T(' ')) cmdline++;
+
+        switch(option)
+        {
+            case 'p':
+            case 'P':
+                opt_print = TRUE;
+                break;
+        }
+    }
     Globals.hMainWnd = CreateWindow(className,
                                     winName,
                                     WS_OVERLAPPEDWINDOW,
