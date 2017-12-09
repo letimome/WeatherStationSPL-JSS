@@ -88,6 +88,9 @@ function initiateScales() {
 	setScale(parent, minWind, maxWind, windScale, 14);
 	var cell = svg
     .selectAll(".node")
+    setElementText(document.getElementById('temp_title'), tempTitle);
+	var label = cell.append("text")
+    .attr("clip-path", function(d) { return "url(#clip-" + d.id + ")"; });
     .data(root.descendants())
     .enter().append("g")
        .attr("transform", function(d) { return "translate(" + d.x0 + "," + d.y0 + ")"; })
@@ -133,6 +136,9 @@ function setTitles() {
     .enter().append("g")
        .attr("transform", function(d) { return "translate(" + d.x0 + "," + d.y0 + ")"; })
       .attr("class", "node")
+      setElementText(document.getElementById('temp_title'), tempTitle);
+	var label = cell.append("text")
+    .attr("clip-path", function(d) { return "url(#clip-" + d.id + ")"; });
       .each(function(d) { d.node = this; })
       .on("mouseover", hovered(true))
       .on("mouseout", hovered(false))
@@ -147,6 +153,12 @@ function setTitles() {
 // PV:ENDCOND
 
 // PV:IFCOND(pv:hasFeature('Temperature'))
+	setElementText(document.getElementById('temp_title'), tempTitle);
+	var label = cell.append("text")
+    .attr("clip-path", function(d) { return "url(#clip-" + d.id + ")"; });
+	setElementText(document.getElementById('temp_title'), tempTitle);
+	var label = cell.append("text")
+    .attr("clip-path", function(d) { return "url(#clip-" + d.id + ")"; });
 	setElementText(document.getElementById('temp_title'), tempTitle);
 	var label = cell.append("text")
     .attr("clip-path", function(d) { return "url(#clip-" + d.id + ")"; });
